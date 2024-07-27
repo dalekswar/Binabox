@@ -5,3 +5,319 @@ font
 text properties
 Text color
 Background color */
+
+
+/* Базовые стили для всех элементов */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Стили для header */
+header.page-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Стили для навигации */
+nav.page-header-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.page-header-nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav.page-header-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Стили для основного контента */
+main.page-content {
+    padding: 20px;
+}
+
+/* Стили для секций */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Стили для главной секции */
+.main-section {
+    text-align: center;
+}
+
+.main-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Стили для коллекции NFT */
+.nft-collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nft-collection-item {
+    width: calc(25% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nft-collection-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Стили для секции о нас */
+.about-us {
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about-us-features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature {
+    width: calc(50% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Стили для секции как это работает */
+.how-it-works {
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.steps {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.step {
+    width: calc(25% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.step-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Стили для дорожной карты */
+.road-map {
+    text-align: center;
+}
+
+.road-map h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.road-map-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.road-map-item {
+    width: calc(50% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Стили для команды */
+.our-team {
+    text-align: center;
+}
+
+.our-team h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.our-team-member {
+    display: inline-block;
+    width: calc(33% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.our-team-member img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.our-team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.our-team-member p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Стили для партнеров */
+.partners {
+    text-align: center;
+}
+
+.partners h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.partner {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.partner-item {
+    width: calc(20% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.partner-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Стили для FAQ */
+.faqs {
+    text-align: center;
+}
+
+.faqs h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-item-heading {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.faq-content {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Стили для footer */
+footer.page-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+footer .page-footer-text {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+footer .page-footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .page-footer-nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .page-footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
