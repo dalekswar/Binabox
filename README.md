@@ -1,10 +1,12 @@
 # Binabox
 Project Binabox BrainRocket course
 
-HTML 
+## HTML 
 HomePage - done
+
 other pages will being here ^^
 
-CSS
-Homepage 
+## CSS
+Homepage - ?
+
 other pages will being here ^^
