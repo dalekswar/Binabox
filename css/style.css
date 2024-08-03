@@ -15,18 +15,35 @@ Background color */
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bakbak One', 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #ffffff;
+    background-color: #0D0D11;
 }
 
-/* Стили для header */
+/* Styles for headers */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bakbak One', 'Roboto', Arial, sans-serif;
+}
+
+/* Styles for header */
 header.page-header {
-    background-color: #333;
+    background-color: #040B11;
     color: #fff;
     padding: 20px;
     text-align: center;
+    text-decoration: none;
+}
+
+/* Remove underline from the logo link */
+.logo {
+    text-decoration: none;
 }
 
 header .logo-text {
@@ -35,37 +52,41 @@ header .logo-text {
     margin-left: 10px;
 }
 
-/* Стили для навигации */
-nav.page-header-nav ul {
-    list-style: none;
+/* Navigation styles */
+.page-header-nav {
     padding: 0;
 }
 
-nav.page-header-nav ul li {
-    display: inline;
+.page-header-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.page-header-nav li {
     margin: 0 10px;
 }
 
-nav.page-header-nav ul li a {
+.page-header-nav a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
 }
 
-/* Стили для основного контента */
+/* Main page styles */
 main.page-content {
     padding: 20px;
 }
 
-/* Стили для секций */
-section {
+/* Section styles */
+.page.section {
     margin-bottom: 40px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
 }
 
-/* Стили для главной секции */
+/* Main section styles */
 .main-section {
     text-align: center;
 }
@@ -80,7 +101,7 @@ section {
     margin-bottom: 20px;
 }
 
-/* Стили для коллекции NFT */
+/* Styles for NFT collection */
 .nft-collection {
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +122,7 @@ section {
     border-radius: 10px;
 }
 
-/* Стили для секции о нас */
+/* Styles for section about-us*/
 .about-us {
     text-align: center;
 }
@@ -138,7 +159,7 @@ section {
     margin-bottom: 10px;
 }
 
-/* Стили для секции как это работает */
+/* Styles for section how it works*/
 .how-it-works {
     text-align: center;
 }
@@ -170,7 +191,7 @@ section {
     margin-bottom: 10px;
 }
 
-/* Стили для дорожной карты */
+/* Styles for road map */
 .road-map {
     text-align: center;
 }
@@ -196,7 +217,7 @@ section {
     padding: 20px;
 }
 
-/* Стили для команды */
+/* Styles for our-team */
 .our-team {
     text-align: center;
 }
@@ -231,7 +252,7 @@ section {
     margin-bottom: 10px;
 }
 
-/* Стили для партнеров */
+/* Styles for partners */
 .partners {
     text-align: center;
 }
@@ -263,7 +284,7 @@ section {
     border-radius: 10px;
 }
 
-/* Стили для FAQ */
+/* Styles for FAQ */
 .faqs {
     text-align: center;
 }
@@ -287,7 +308,7 @@ section {
     margin-top: 10px;
 }
 
-/* Стили для footer */
+/* Styles for footer */
 footer.page-footer {
     background-color: #333;
     color: #fff;
