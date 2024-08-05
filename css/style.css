@@ -7,7 +7,7 @@ Text color
 Background color */
 
 
-/* Базовые стили для всех элементов */
+/* Basics styles for all elements */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +15,7 @@ Background color */
 }
 
 body {
-    font-family: 'Bakbak One', 'Roboto', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.6;
     color: #ffffff;
     background-color: #0D0D11;
@@ -29,10 +29,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Bakbak One', 'Roboto', Arial, sans-serif;
+    font-family: 'Bakbak One', Arial, sans-serif;
 }
 
-/* Styles for header */
+/* Styles for header for index, catalog, catalog-item*/
 header.page-header {
     background-color: #040B11;
     color: #fff;
@@ -309,11 +309,19 @@ main.page-content {
 }
 
 /* Styles for footer */
+
+/* footer for main-page */
+footer.page-footer-main-page {
+    color: #fff;
+    text-align: center;
+}
+
+/* footer for catalog.html and catalog-item.html */
 footer.page-footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
+
 }
 
 footer .logo-text {
@@ -337,8 +345,11 @@ footer .page-footer-nav ul li {
     margin: 0 10px;
 }
 
-footer .page-footer-nav ul li a {
+/* Avoid nesting selectors more than two levels deep */
+
+
+/* footer .page-footer-nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-}
+} */
