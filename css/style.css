@@ -34,22 +34,44 @@ h6 {
 
 /* Styles for header for index, catalog, catalog-item*/
 header.page-header {
+    font-family: 'Bakbak One';
     background-color: #040B11;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 10%;
+    /* padding: 20px; */
 }
 
 /* Remove underline from the logo link */
-.logo {
+/* .logo {
+    text-decoration: none;
+} */
+a {
     text-decoration: none;
 }
 
 header .logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    /* margin-left: 10px; */
+}
+
+/* color for button discord */
+.btn-discord {
+    background-color: #141B22;
+    color: #FFFFFF;
+}
+
+/* color for button connect */
+.btn-connect {
+    background-color: #21E786;
+
+}
+
+.btn-sun {
+    background-color: #141B22;
 }
 
 /* Navigation styles */
@@ -68,7 +90,6 @@ header .logo-text {
 }
 
 .page-header-nav a {
-    color: #fff;
     text-decoration: none;
     font-weight: 500;
 }
@@ -125,6 +146,7 @@ main.page-content {
 /* Styles for section about-us*/
 .about-us {
     text-align: center;
+
 }
 
 .about-us h2 {
@@ -148,7 +170,7 @@ main.page-content {
 
 .feature {
     width: calc(50% - 20px);
-    background-color: #f9f9f9;
+    background-color: #141B22;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -180,7 +202,7 @@ main.page-content {
 
 .step {
     width: calc(25% - 20px);
-    background-color: #f9f9f9;
+    background-color: #141B22;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -202,19 +224,19 @@ main.page-content {
 }
 
 .road-map-list {
-    list-style: none;
+    /* list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .road-map-item {
-    width: calc(50% - 20px);
+    /* width: calc(50% - 20px);
     background-color: #f9f9f9;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px; */
 }
 
 /* Styles for our-team */
@@ -231,7 +253,7 @@ main.page-content {
     display: inline-block;
     width: calc(33% - 20px);
     margin: 10px;
-    background-color: #f9f9f9;
+    background-color: rgba(20, 27, 34, 1);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -287,6 +309,7 @@ main.page-content {
 /* Styles for FAQ */
 .faqs {
     text-align: center;
+
 }
 
 .faqs h2 {
@@ -296,6 +319,7 @@ main.page-content {
 
 .faq-item {
     margin-bottom: 10px;
+    background-color: rgba(20, 27, 34, 1);
 }
 
 .faq-item-heading {
