@@ -75,6 +75,11 @@ header .logo-text {
 }
 
 /* Navigation styles */
+
+/* .nav-link:visited {
+    color: white;     color for visited links 
+} */
+
 .page-header-nav {
     padding: 0;
 }
@@ -108,9 +113,7 @@ main.page-content {
 }
 
 /* Main section styles */
-.main-section {
-    text-align: center;
-}
+.main-section {}
 
 .main-section h1 {
     font-size: 36px;
@@ -140,7 +143,6 @@ main.page-content {
 
 .nft-collection-item img {
     max-width: 100%;
-    border-radius: 10px;
 }
 
 /* Styles for section about-us*/
