@@ -96,6 +96,8 @@ header .logo-text {
 
 .page-header-nav {
     padding: 0;
+
+
 }
 
 .page-header-nav ul {
@@ -109,8 +111,9 @@ header .logo-text {
 }
 
 .page-header-nav a {
-    text-decoration: none;
-    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    /* text-decoration: none;
+    font-weight: 500; */
 }
 
 /* Main page styles */
@@ -372,9 +375,11 @@ footer.page-footer {
 }
 
 footer .logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    /* margin-left: 10px; */
 }
 
 footer .page-footer-text {
@@ -392,6 +397,7 @@ footer .page-footer-nav ul li {
     margin: 0 10px;
 }
 
+
 /* Avoid nesting selectors more than two levels deep */
 
 
@@ -400,3 +406,18 @@ footer .page-footer-nav ul li {
     text-decoration: none;
     font-weight: 500;
 } */
+
+
+/* Styles for catalog.html */
+section.collections {}
+
+section.items-grid {}
+
+footer.page-footer {}
+
+/* Styles for catalog-item.html */
+section.items {}
+
+section.exploration {}
+
+footer.page-footer {}
