@@ -94,10 +94,9 @@ header .logo-text {
     color: white;     color for visited links 
 } */
 
-.page-header-nav {
+
+/* .page-header-nav {
     padding: 0;
-
-
 }
 
 .page-header-nav ul {
@@ -112,14 +111,15 @@ header .logo-text {
 
 .page-header-nav a {
     color: rgba(255, 255, 255, 1);
-    /* text-decoration: none;
-    font-weight: 500; */
-}
+    text-decoration: none;
+    font-weight: 500;
+} */
 
-/* Main page styles */
-main.page-content {
-    padding: 20px;
-}
+/* Main page styles for index.html */
+
+/* main.page-content {
+    
+} */
 
 /* Section styles */
 /* .page.section {
@@ -131,7 +131,7 @@ main.page-content {
 
 /* Main section styles */
 
-.main-section {}
+/* .main-section {} */
 
 .main-section h1 {
     font-size: 36px;
@@ -139,7 +139,8 @@ main.page-content {
 }
 
 .main-section p {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 30px;
     /* margin-bottom: 20px; */
 }
 
@@ -149,6 +150,7 @@ main.page-content {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
 }
 
 .nft-collection-item {
@@ -167,18 +169,6 @@ main.page-content {
 .about-us {
     text-align: center;
 
-}
-
-
-
-/* .about-us h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-} */
-
-.about-us p {
-    font-size: 16px;
-    margin-bottom: 20px;
 }
 
 .about-us-features {
@@ -249,21 +239,21 @@ main.page-content {
     margin-bottom: 20px;
 } */
 
-.road-map-list {
-    /* list-style: none;
+/* .road-map-list {
+    list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center; */
-}
+    justify-content: center;
+} */
 
-.road-map-item {
-    /* width: calc(50% - 20px);
+/* .road-map-item {
+    width: calc(50% - 20px);
     background-color: #f9f9f9;
     border-radius: 10px;
-    padding: 20px; */
-}
+    padding: 20px;
+} */
 
 /* Styles for our-team */
 .our-team {
@@ -409,15 +399,22 @@ footer .page-footer-nav ul li {
 
 
 /* Styles for catalog.html */
+
+/* main.page-content-catalog {}
+
 section.collections {}
 
 section.items-grid {}
 
-footer.page-footer {}
+footer.page-footer {} */
+
 
 /* Styles for catalog-item.html */
+
+/* main.page-content-catalog-item {}
+
 section.items {}
 
 section.exploration {}
 
-footer.page-footer {}
+footer.page-footer {} */
