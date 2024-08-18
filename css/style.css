@@ -1,12 +1,3 @@
-/* базовые стили для размеченных блоков с помощью Emmet */
-
-/* 
-font
-text properties
-Text color
-Background color */
-
-
 /* Basics styles for all elements */
 * {
     box-sizing: border-box;
@@ -22,15 +13,12 @@ body {
 }
 
 /* Styles for headers */
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.main-heading {
     font-family: 'Bakbak One', Arial, sans-serif;
-} */
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 80px;
+}
 
 .section-title {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -42,23 +30,21 @@ h6 {
 
 .color-binabox {
     color: rgba(33, 231, 134, 1);
-
 }
 
 /* Styles for header for index, catalog, catalog-item*/
 header.page-header {
     font-family: 'Bakbak One';
     background-color: #040B11;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 10%;
-    /* padding: 20px; */
 }
 
 /* Remove underline from the logo link */
-/* .logo {
-    text-decoration: none;
-} */
+
 a {
     text-decoration: none;
 }
@@ -68,7 +54,6 @@ header .logo-text {
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
-    /* margin-left: 10px; */
 }
 
 /* color for button discord */
@@ -84,273 +69,92 @@ header .logo-text {
 
 }
 
+/* color for button sun */
 .btn-sun {
     background-color: #141B22;
 }
 
-/* Navigation styles */
+/* Navigation styles for index.html catalog.html and catalog-item.html */
+/* nav.pageheader-nav {} */
 
-/* .nav-link:visited {
-    color: white;     color for visited links 
-} */
-
-
-/* .page-header-nav {
-    padding: 0;
+/* color for visited links */
+.nav-link:visited {
+    color: white;
 }
 
-.page-header-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.page-header-nav li {
-    margin: 0 10px;
-}
-
-.page-header-nav a {
-    color: rgba(255, 255, 255, 1);
-    text-decoration: none;
-    font-weight: 500;
-} */
-
-/* Main page styles for index.html */
-
-/* main.page-content {
-    
-} */
-
-/* Section styles */
-/* .page.section {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-} */
-
-/* Main section styles */
-
-/* .main-section {} */
-
-.main-section h1 {
-    font-size: 36px;
-    /* margin-bottom: 20px; */
-}
-
-.main-section p {
+.main-text {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    /* margin-bottom: 20px; */
 }
 
-/* Styles for NFT collection */
-.nft-collection {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+/* Styles for all buttons */
 
+.btn {
+    font-family: 'Bakbak One';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
-.nft-collection-item {
-    width: calc(25% - 20px);
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
 
-.nft-collection-item img {
-    max-width: 100%;
-}
+/* Styles for index.html */
+/* main.page-content
+section.main-section
 
-/* Styles for section about-us*/
-.about-us {
-    text-align: center;
 
-}
+section.how-it-works
+section.road-map
+section.our-team
+section.partners
+section.faqs */
 
-.about-us-features {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
 
-.feature {
-    width: calc(50% - 20px);
-    background-color: #141B22;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-.feature-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/* Styles for section how it works*/
-.how-it-works {
-    text-align: center;
-}
-
-/* .how-it-works h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-} */
-
-.steps {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.step {
-    width: calc(25% - 20px);
-    background-color: #141B22;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-.step-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Styles for road map */
-.road-map {
-    text-align: center;
-}
-
-.road-map-container {
+/* Styles section.nft-collection */
+.nft-collection-img {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* .road-map h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-} */
-
-/* .road-map-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-} */
-
-/* .road-map-item {
-    width: calc(50% - 20px);
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-} */
-
-/* Styles for our-team */
-.our-team {
+/* Styled for section.about-us */
+.about-us {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
     text-align: center;
 }
 
-/* .our-team h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-} */
-
-.our-team-member {
-    display: inline-block;
-    width: calc(33% - 20px);
-    margin: 10px;
-    background-color: rgba(20, 27, 34, 1);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
+.about-us p {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
 }
 
-.our-team-member img {
-    border-radius: 50%;
-    margin-bottom: 10px;
+.feature {
+    background-color: #222;
+    color: #fff;
 }
 
-.our-team-member h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
+/* Styles for catalog.html */
+/* main.page-content-catalog {}
+section.collections {}
+section.items-grid {}
+*/
 
-.our-team-member p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
 
-/* Styles for partners */
-.partners {
-    text-align: center;
-}
+/* Styles for catalog-item.html */
+/* main.page-content-catalog-item {}
+section.items {}
+section.exploration {} */
 
-/* .partners h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-} */
-
-.partner {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.partner-item {
-    width: calc(20% - 20px);
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
-.partner-item img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Styles for FAQ */
-.faqs {
-    text-align: center;
-
-}
-
-/* .faqs h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-} */
-
-.faq-item {
-    margin-bottom: 10px;
-    background-color: rgba(20, 27, 34, 1);
-}
-
-.faq-item-heading {
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.faq-content {
-    font-size: 16px;
-    margin-top: 10px;
-}
 
 /* Styles for footer */
 
-/* footer for main-page */
+/* footer index.html */
 footer.page-footer-main-page {
     color: #fff;
     text-align: center;
@@ -369,52 +173,4 @@ footer .logo-text {
     font-size: 22px;
     font-weight: 400;
     line-height: 30px;
-    /* margin-left: 10px; */
 }
-
-footer .page-footer-text {
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-footer .page-footer-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer .page-footer-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-
-/* Avoid nesting selectors more than two levels deep */
-
-
-/* footer .page-footer-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-} */
-
-
-/* Styles for catalog.html */
-
-/* main.page-content-catalog {}
-
-section.collections {}
-
-section.items-grid {}
-
-footer.page-footer {} */
-
-
-/* Styles for catalog-item.html */
-
-/* main.page-content-catalog-item {}
-
-section.items {}
-
-section.exploration {}
-
-footer.page-footer {} */
