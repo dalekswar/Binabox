@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-    background-color: #0D0D11;
+    font-family: 'Poppins', 'Bakbak One', sans-serif;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(13, 13, 17, 1);
 }
 
 /* Styles for headers */
@@ -34,9 +34,8 @@ body {
 
 /* Styles for header for index, catalog, catalog-item*/
 header.page-header {
+    background-color: rgba(4, 11, 17, 1);
     font-family: 'Bakbak One';
-    background-color: #040B11;
-    color: rgba(255, 255, 255, 1);
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;
@@ -50,7 +49,6 @@ a {
 }
 
 header .logo-text {
-
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
@@ -99,20 +97,28 @@ header .logo-text {
     text-align: left;
 }
 
+.btn-connect-wallet {
+    background-color: rgba(33, 231, 134, 1);
+}
 
 /* Styles for index.html */
 /* main.page-content
 section.main-section
 
-
-section.how-it-works
-section.road-map
-section.our-team
-section.partners
-section.faqs */
-
-
 /* Styles section.nft-collection */
+.nft-collection-item {
+    font-family: 'Bakbak One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+/* color for visited links */
+.nft-collection-link:visited {
+    color: white;
+}
+
 .nft-collection-img {
     background-color: rgba(255, 255, 255, 0.05);
 }
@@ -139,18 +145,182 @@ section.faqs */
     color: #fff;
 }
 
+.feature-title {
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.feature-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+/* section.how-it-works {} */
+.step-title {
+    font-family: 'Bakbak One';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+.step-description {
+    font-family: 'Bakbak One';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+
+}
+
+/* section.road-map {} */
+.road-map-heading-phase {
+    font-family: 'Bakbak One';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+
+}
+
+.road-map-list {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.road-map-slider {
+    font-family: 'Bakbak One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.road-map-container {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* section.our-team {} */
+
+.our-team-member h3 {
+    font-family: 'Bakbak One';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+.our-team-member p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+
+}
+
+/* section.partners {} */
+
+/* section.faqs {} */
+.faq-item faq-item-heading {
+    font-family: 'Bakbak One';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.faq-item p {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: rgba(20, 27, 34, 1);
+}
+
+
+
 /* Styles for catalog.html */
 /* main.page-content-catalog {}
-section.collections {}
-section.items-grid {}
 */
 
+/* section.collections {} */
+.collections-heading {
+    font-family: 'Bakbak One';
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+
+}
+
+.breadcrumb-link-collections {
+    color: rgba(33, 231, 134, 1);
+}
+
+/* section.items-grid {} */
+.item p {
+    font-family: 'Bakbak One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
 
 /* Styles for catalog-item.html */
 /* main.page-content-catalog-item {}
-section.items {}
-section.exploration {} */
+*/
 
+/* section.items {} */
+.items-text {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.items-price {
+    font-family: 'Bakbak One';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+}
+
+.item-price-number {
+    color: rgba(33, 231, 134, 1);
+}
+
+.nav-items-link-details {
+    color: rgba(33, 231, 134, 1);
+}
+
+/* section.exploration {}  */
+.exploration-text {
+    font-family: 'Bakbak One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
 
 /* Styles for footer */
 
