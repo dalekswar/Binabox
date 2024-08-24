@@ -6,10 +6,15 @@
 }
 
 body {
-    font-family: 'Poppins', 'Bakbak One', sans-serif;
+    font-family: 'Poppins', 'Bakbak One', Arial, sans-serif;
     line-height: 22px;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(13, 13, 17, 1);
+}
+
+/* delete dots in ul*/
+ul {
+    list-style-type: none;
 }
 
 /* Styles for headers */
@@ -35,7 +40,7 @@ body {
 /* Styles for header for index, catalog, catalog-item*/
 header.page-header {
     background-color: rgba(4, 11, 17, 1);
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;
@@ -76,8 +81,13 @@ header .logo-text {
 /* nav.pageheader-nav {} */
 
 /* color for visited links */
-.nav-link:visited {
-    color: white;
+/* .nav-link:visited {
+    color: rgb(143, 99, 156);
+} */
+
+/* color for all links .nav-link (index, catalog, catalog-item) */
+.nav-link {
+    color: rgba(255, 255, 255, 1);
 }
 
 .main-text {
@@ -107,7 +117,7 @@ section.main-section
 
 /* Styles section.nft-collection */
 .nft-collection-item {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -125,7 +135,7 @@ section.main-section
 
 /* Styled for section.about-us */
 .about-us {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -133,7 +143,7 @@ section.main-section
 }
 
 .about-us p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -146,7 +156,7 @@ section.main-section
 }
 
 .feature-title {
-    font-family: 'Bakbak One', sans-serif;
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
@@ -154,7 +164,7 @@ section.main-section
 }
 
 .feature-description {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -163,7 +173,7 @@ section.main-section
 
 /* section.how-it-works {} */
 .step-title {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 30px;
@@ -172,7 +182,7 @@ section.main-section
 }
 
 .step-description {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -182,7 +192,7 @@ section.main-section
 
 /* section.road-map {} */
 .road-map-heading-phase {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 44px;
@@ -191,7 +201,7 @@ section.main-section
 }
 
 .road-map-list {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -200,7 +210,7 @@ section.main-section
 }
 
 .road-map-slider {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -215,7 +225,7 @@ section.main-section
 /* section.our-team {} */
 
 .our-team-member h3 {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
@@ -236,7 +246,7 @@ section.main-section
 
 /* section.faqs {} */
 .faq-item faq-item-heading {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
@@ -244,7 +254,7 @@ section.main-section
 }
 
 .faq-item p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -261,9 +271,28 @@ section.main-section
 /* main.page-content-catalog {}
 */
 
+/* color for all links in the page catalog*/
+.breadcrumb-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumb-link-collections {
+    color: rgba(255, 255, 255, 1);
+}
+
+.social-icon {
+    color: rgba(194, 195, 197, 1);
+
+}
+
+.item-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+
 /* section.collections {} */
 .collections-heading {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 44px;
     font-weight: 400;
     line-height: 56px;
@@ -277,7 +306,7 @@ section.main-section
 
 /* section.items-grid {} */
 .item p {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -288,9 +317,23 @@ section.main-section
 /* main.page-content-catalog-item {}
 */
 
+/* color for all links in the page catalog-item*/
+
+.nav-items-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav-items-link-details {
+    color: rgba(255, 255, 255, 1);
+}
+
+.exploration-link {
+    color: rgba(255, 255, 255, 1);
+}
+
 /* section.items {} */
 .items-text {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -298,7 +341,7 @@ section.main-section
 }
 
 .items-price {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 44px;
@@ -315,7 +358,7 @@ section.main-section
 
 /* section.exploration {}  */
 .exploration-text {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -336,6 +379,15 @@ footer.page-footer {
     color: #fff;
     padding: 20px;
 
+}
+
+/* color for catalog.html links */
+.subscribe-list {
+    color: rgba(194, 195, 197, 1);
+}
+
+.company-list {
+    color: rgba(194, 195, 197, 1);
 }
 
 footer .logo-text {
