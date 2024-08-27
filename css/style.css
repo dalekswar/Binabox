@@ -1,0 +1,426 @@
+/* Basics styles for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', 'Bakbak One', Arial, sans-serif;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(13, 13, 17, 1);
+}
+
+/* delete dots in ul*/
+ul {
+    list-style-type: none;
+}
+
+p {
+    color: #C2C3C5;
+}
+
+/* Styles for headers */
+.main-heading {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 80px;
+}
+
+.section-title {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.color-binabox {
+    color: rgba(33, 231, 134, 1);
+}
+
+/* Styles for header for index, catalog, catalog-item*/
+header.page-header {
+    background-color: rgba(4, 11, 17, 1);
+    font-family: 'Bakbak One', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 10%;
+}
+
+/* Remove underline from the logo link */
+
+a {
+    text-decoration: none;
+}
+
+header .logo-text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+/* color for button discord */
+.btn-discord {
+    background-color: #141B22;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+
+/* color for button connect */
+.btn-connect {
+    background-color: #21E786;
+
+}
+
+/* color for button sun */
+.btn-sun {
+    background-color: #141B22;
+}
+
+/* Navigation styles for index.html catalog.html and catalog-item.html */
+/* nav.pageheader-nav {} */
+
+/* color for visited links */
+/* .nav-link:visited {
+    color: rgb(143, 99, 156);
+} */
+
+/* color for all links .nav-link (index, catalog, catalog-item) */
+.nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.main-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+}
+
+/* Styles for all buttons */
+
+.btn {
+    font-family: 'Bakbak One';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.btn-connect-wallet {
+    background-color: rgba(33, 231, 134, 1);
+}
+
+/* Styles for index.html */
+
+/* main.page-content
+section.main-section*/
+
+.stat-number {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+
+}
+
+.stat-label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #C2C3C5;
+}
+
+/* Styles section.nft-collection */
+.nft-collection-item {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+/* color for links */
+.nft-collection-link {
+    color: white;
+}
+
+.nft-collection-img {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Styled for section.about-us */
+.about-us {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.feature {
+    background-color: #222;
+    color: #fff;
+}
+
+.feature-title {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.feature-description {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+/* section.how-it-works {} */
+.step-title {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #21E786;
+}
+
+.step-description {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.steps {
+    background-color: #141B22;
+    ;
+}
+
+/* section.road-map {} */
+.road-map-heading-phase {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+
+}
+
+.road-map-list {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #C2C3C5;
+
+
+}
+
+.road-map-slider {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.road-map-container {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* section.our-team {} */
+
+.our-team-member h3 {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+.our-team-member p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+
+}
+
+/* section.partners {} */
+
+/* section.faqs {} */
+.faq-item faq-item-heading {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.faq-item p {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: rgba(20, 27, 34, 1);
+}
+
+/* Styles for catalog.html */
+/* main.page-content-catalog {}
+*/
+
+/* color for all links in the page catalog*/
+.breadcrumb-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumb-link-collections {
+    color: rgba(255, 255, 255, 1);
+}
+
+.social-icon {
+    color: rgba(194, 195, 197, 1);
+
+}
+
+.item-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* section.collections {} */
+.collections-heading {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+
+}
+
+.breadcrumb-link-collections {
+    color: rgba(33, 231, 134, 1);
+}
+
+/* section.items-grid {} */
+.item p {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+/* Styles for catalog-item.html */
+/* main.page-content-catalog-item {}
+*/
+
+/* color for all links in the page catalog-item*/
+
+.nav-items-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav-items-link-details {
+    color: rgba(255, 255, 255, 1);
+}
+
+.exploration-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* section.items {} */
+.items-text {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.items-price {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+}
+
+.item-price-number {
+    color: rgba(33, 231, 134, 1);
+}
+
+.nav-items-link-details {
+    color: rgba(33, 231, 134, 1);
+}
+
+/* section.exploration {}  */
+.exploration-text {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+/* Styles for footer */
+
+/* footer index.html */
+footer.page-footer-main-page {
+    color: #fff;
+    text-align: center;
+}
+
+.page-footer-text {
+    color: #C2C3C5;
+}
+
+.nav-link-footer {
+    color: #C2C3C5;
+}
+
+/* footer for catalog.html and catalog-item.html */
+footer.page-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+
+}
+
+/* color for catalog.html links */
+.subscribe-list {
+    color: rgba(194, 195, 197, 1);
+}
+
+.company-list {
+    color: rgba(194, 195, 197, 1);
+}
+
+footer .logo-text {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+}

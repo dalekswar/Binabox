@@ -1,12 +1,20 @@
-<!-- Home page (exclude the subscription block in the page footer) -->
-
 <!DOCTYPE html>
 <html lang="en">
+<!-- Home page (exclude the subscription block in the page footer) -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binabox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
 
 <body>
@@ -36,15 +44,17 @@
             </ul>
         </nav>
         <div class="header-buttons">
-            <button class="btn btn-sun">Sun</button>
-            <button class="btn btn-connect">Connect</button>
-            <button class="btn btn-discord">Discord</button>
+            <button class="btn btn-sun"><img src="./img/sun.svg" alt="Sun" class="btn-sun-img"></button>
+            <button class="btn btn-discord"><img src="img/discord.svg" alt="" class="btn-discord-img">Discord</button>
+            <button class="btn btn-connect"><img src="img/connect-button.svg" alt="">Connect</button>
+
         </div>
     </header>
 
     <main class="page-content">
         <section class="main-section">
-            <h1 class="main-heading">WITH BINABOX EXPLORE NFT COLLECTION</h1>
+            <h1 class="main-heading">WITH <span class="color-binabox">BINABOX</span> EXPLORE NFT
+                COLLECTION</h1>
             <p class="main-text">We are the best way to check the rarity of NFT collection</p>
             <dl class="stats">
                 <div class="stat-item">
@@ -55,41 +65,41 @@
                     <dt class="stat-number">1000+</dt>
                     <dd class="stat-label">Profiles Whitelisted</dd>
                 </div>
-                <div>
+                <div class="stats-buttons">
                     <button class="btn btn-connect-wallet">Connect Wallet</button>
                     <button class="btn btn-whitelist">Whitelist Now</button>
                 </div>
-                <img src="main-section-img.png" alt="main-section-img" class="main-section-img">
             </dl>
+            <img src="img/image-big-cube.png" alt="main-section-img" class="main-section-img">
         </section>
 
         <section class="nft-collection">
             <article class="nft-collection-item">
-                <a href="catalog-item.html">
+                <a class="nft-collection-link" href="catalog-item.html">
                     <img src="nft-collection-img.png" alt="nft-collection-img" class="nft-collection-img">
                     <div class="nft-item">SKELATON #01</div>
                 </a>
             </article>
             <article class="nft-collection-item">
-                <a href="catalog-item.html">
+                <a class="nft-collection-link" href="catalog-item.html">
                     <img src="nft-collection-img1.png" alt="nft-collection-img" class="nft-collection-img">
                     <div class="nft-item">MEECAT #02</div>
                 </a>
             </article>
             <article class="nft-collection-item">
-                <a href="catalog-item.html">
+                <a class="nft-collection-link" href="catalog-item.html">
                     <img src="nft-collection-img2.png" alt="nft-collection-img" class="nft-collection-img">
                     <div class="nft-item">SPOTIOR #03</div>
                 </a>
             </article>
             <article class="nft-collection-item">
-                <a href="catalog-item.html">
+                <a class="nft-collection-link" href="catalog-item.html">
                     <img src="nft-collection-img3.png" alt="nft-collection-img" class="nft-collection-img">
                     <div class="nft-item">SKISIRS #02</div>
                 </a>
             </article>
             <article class="nft-collection-item">
-                <a href="catalog-item.html">
+                <a class="nft-collection-link" href="catalog-item.html">
                     <img src="nft-collection-img4.png" alt="nft-collection-img" class="nft-collection-img">
                     <div class="nft-item">SKISIRS #02</div>
                 </a>
@@ -97,13 +107,17 @@
         </section>
 
         <section class="about-us">
-            <h2 class="about-us-heading">ABOUT US</h2>
-            <p class="about-us-description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                id
-                est laborum velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.
-            </p>
+            <div class="about-us-div">
+                <h2 class="about-us-heading section-title">ABOUT US</h2>
+                <p class="about-us-description">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim
+                    id
+                    est laborum velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.
+                </p>
+            </div>
+
             <ol class="about-us-features">
                 <li class="feature feature-high-quality">
                     <h3 class="feature-title">01 HIGH QUALITY</h3>
@@ -131,7 +145,7 @@
 
 
         <section class="how-it-works">
-            <h2 class="how-it-works-heading">HOW TO BINABOX WORK</h2>
+            <h2 class="how-it-works-heading section-title">HOW TO <span class="color-binabox">BINABOX</span> WORK</h2>
             <ol class="steps">
                 <li class="step step-1">
                     <h3 class="step-title">STEP 1</h3>
@@ -154,11 +168,19 @@
 
 
         <section class="road-map">
-            <h2 class="road-map-heading">ROAD MAP</h2>
-            <div class="images">
-                <div class="image-big-square"></div>
-                <div class="image-small-square"></div>
-                <div class="image-small-square"></div>
+            <h2 class="road-map-heading section-title">ROAD MAP</h2>
+            <div class="road-map-container">
+                <div class="images">
+                    <div class="image-big-square">
+                        <img src="img/big-image.jpg" alt="Big Image">
+                    </div>
+                    <div class="image-small-square">
+                        <img src="img/small-image1.jpg" alt="Small Image 1">
+                    </div>
+                    <div class="image-small-square">
+                        <img src="img/small-image2.jpg" alt="Small Image 2">
+                    </div>
+                </div>
                 <h3 class="road-map-heading-phase">PHASE 1</h3>
                 <ul class="road-map-list">
                     <li class="road-map-item">Befriending&Chat Functions</li>
@@ -166,18 +188,20 @@
                     <li class="road-map-item">Corsair Wheel</li>
                     <li class="road-map-item">Mobile Version Launch</li>
                 </ul>
+                <button class="btn btn-read-more">Read More</button>
             </div>
-            <ol class="slider">
-                <li class="slider-item">PHASE1</li>
-                <li class="slider-item">PHASE2</li>
-                <li class="slider-item">PHASE3</li>
-                <li class="slider-item">PHASE4</li>
-            </ol>
-            <button class="btn btn-read-more">Read More</button>
+            <div class="road-map-slider">
+                <ol class="slider">
+                    <li class="slider-item">PHASE1</li>
+                    <li class="slider-item">PHASE2</li>
+                    <li class="slider-item">PHASE3</li>
+                    <li class="slider-item">PHASE4</li>
+                </ol>
+            </div>
         </section>
 
         <section class="our-team">
-            <h2 class="our-team-heading">OUR TEAM</h2>
+            <h2 class="our-team-heading section-title">OUR TEAM</h2>
             <article class="our-team-member">
                 <img src="profile1.png" alt="Ralph Edwards">
                 <h3 class="ralph-edwards-heading">Ralph Edwards</h3>
@@ -247,67 +271,42 @@
         </section>
 
         <section class="partners">
-            <h2 class="partners-heading">BINABOX PARTNER</h2>
-            <ul class="partner">
-                <li class="partner-item">
-                    <img src="near.png" alt="NEAR">
-                </li>
-                <li class="partner-item">
-                    <img src="binance_chain.png" alt="Binance Chain">
-                </li>
-                <li class="partner-item">
-                    <img src="coinbase_wallet.png" alt="Coinbase Wallet">
-                </li>
-                <li class="partner-item">
-                    <img src="zerion.png" alt="Zerion">
-                </li>
-                <li class="partner-item">
-                    <img src="zapper.png" alt="Zapper">
-                </li>
-                <li class="partner-item">
-                    <img src="instadapp.png" alt="Instadapp">
-                </li>
-                <li class="partner-item">
-                    <img src="atoken.png" alt="AToken">
-                </li>
-                <li class="partner-item">
-                    <img src="trust_wallet.png" alt="Trust Wallet">
-                </li>
-                <li class="partner-item">
-                    <img src="giving_block.png" alt="Giving Block">
-                </li>
-                <li class="partner-item">
-                    <img src="venly.png" alt="Venly">
-                </li>
-                <li class="partner-item">
-                    <img src="pillar.png" alt="Pillar">
-                </li>
-                <li class="partner-item">
-                    <img src="dappradar.png" alt="DappRadar">
-                </li>
-                <li class="partner-item">
-                    <img src="synthetix.png" alt="Synthetix">
-                </li>
-                <li class="partner-item">
-                    <img src="unstoppable.png" alt="Unstoppable">
-                </li>
-                <li class="partner-item">
-                    <img src="live_coin_watch.png" alt="Live Coin Watch">
-                </li>
-                <li class="partner-item">
-                    <img src="bitpay.png" alt="BitPay">
-                </li>
-                <li class="partner-item">
-                    <img src="unstoppable_domains.png" alt="Unstoppable Domains">
-                </li>
-                <li class="partner-item">
-                    <img src="huobi_wallet.png" alt="Huobi Wallet">
-                </li>
-            </ul>
+            <h2 class="partners-heading section-title"><span class="color-binabox">BINABOX</span> PARTNER</h2>
+            <table>
+                <tr>
+                    <td style="background-color: rgba(20, 27, 34, 1);"><img src="near.png" alt="NEAR"></td>
+                    <td><img src="binance_chain.png" alt="Binance Chain"></td>
+                    <td style="background-color: rgba(20, 27, 34, 1);"><img src="coinbase_wallet.png"
+                            alt="Coinbase Wallet"></td>
+                    <td><img src="zerion.png" alt="Zerion"></td>
+                    <td style="background-color: rgba(20, 27, 34, 1);"><img src="zapper.png" alt="Zapper"></td>
+                    <td><img src="instadapp.png" alt="Instadapp"></td>
+                </tr>
+                <tr>
+                    <td><img src="atoken.png" alt="AToken"></td>
+                    <td style="background-color: rgba(20, 27, 34, 1);"><img src="trust_wallet.png" alt="Trust Wallet">
+                    </td>
+                    <td><img src="giving_block.png" alt="Giving Block"></td>
+                    <td style="background-color: rgba(20, 27, 34, 1);"><img src="venly.png" alt="Venly"></td>
+                    <td><img src="pillar.png" alt="Pillar"></td>
+                    <td style="background-color: rgba(20, 27, 34, 1);"><img src="dappradar.png" alt="DappRadar"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgba(20, 27, 34, 1);"><img src="synthetix.png" alt="Synthetix"></td>
+                    <td><img src="unstoppable.png" alt="Unstoppable"></td>
+                    <td style="background-color: rgba(20, 27, 34, 1);"><img src="live_coin_watch.png"
+                            alt="Live Coin Watch"></td>
+                    <td><img src="bitpay.png" alt="BitPay"></td>
+                    <td style="background-color: rgba(20, 27, 34, 1);"><img src="unstoppable_domains.png"
+                            alt="Unstoppable Domains"></td>
+                    <td><img src="huobi_wallet.png" alt="Huobi Wallet"></td>
+                </tr>
+            </table>
+
         </section>
 
         <section class="faqs">
-            <h2 class="faqs-heading">FAQs</h2>
+            <h2 class="faqs-heading section-title">FAQs</h2>
             <details class="faq-item">
                 <summary class="faq-item-heading">What Are The NFTs?</summary>
                 <p class="faq-content">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus
@@ -330,13 +329,13 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer-main-page">
         <section class="join-community">
-            <h2 class="join-community-heading">JOIN OUR COMMUNITY</h2>
+            <h2 class="join-community-heading section-title">JOIN OUR COMMUNITY</h2>
             <p class="join-community-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
             <div class="join-community-buttons">
-                <button class="btn btn-discord">Discord</button>
+                <button class="btn btn-discord-footer">Discord</button>
                 <button class="btn btn-whitelist">Whitelist Now</button>
             </div>
         </section>
@@ -347,14 +346,14 @@
                 </a>
                 <span class="logo-text">BINABOX</span>
             </div>
-            <p class="page-footer-text">ALL rights reserved</p>
+            <p class="page-footer-text">BINABOX 2022 - ALL rights reserved</p>
             <nav class="page-footer-nav">
                 <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Roadmap</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Our Team</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link-footer">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link-footer">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link-footer">Roadmap</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link-footer">Our Team</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link-footer">FAQs</a></li>
                 </ul>
             </nav>
         </div>

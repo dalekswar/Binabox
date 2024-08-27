@@ -1,12 +1,18 @@
-<!-- Item page (exclude the reply block) -->
-
 <!DOCTYPE html>
 <html lang="en">
+<!-- Item page (exclude the reply block) -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -36,21 +42,21 @@
             </ul>
         </nav>
         <div class="header-buttons">
-            <button class="btn btn-sun">Sun</button>
-            <button class="btn btn-connect">Connect</button>
-            <button class="btn btn-discord">Discord</button>
+            <button class="btn btn-sun"><img src="img/sun.svg" alt="Sun" class="btn-sun-img">Sun</button>
+            <button class="btn btn-discord"><img src="img/discord.svg" alt="" class="btn-discord-img">Discord</button>
+            <button class="btn btn-connect"><img src="img/connect-button.svg" alt="">Connect</button>
         </div>
     </header>
-    <main class="page-content">
+    <main class="page-content-catalog-item">
         <section class="items">
-            <h1 class="items-heading">ITEM DETAIL</h1>
+            <h3 class="items-heading section-title">ITEM DETAIL</h3>
             <nav class="nav-items">
                 <a href="index.html" class="nav-items-link">HOME</a> |
-                <a href="catalog-item.html" class="nav-items-link">ITEM DETAIL</a>
+                <a href="catalog-item.html" class="nav-items-link-details">ITEM DETAIL</a>
             </nav>
             <img src="path/to/skeleton_image.png" alt="Skeleton Image">
             <div>
-                <h2 class="items-title">SKISIRS#4587</h2>
+                <h2 class="items-title section-title">SKISIRS#4587</h2>
                 <p class="items-text">As the first hero of the Neoh Universe, collection has over 9,999 unique skins
                     drawn from the
                     different missions and challenges he faced throughout his life.</p>
@@ -68,7 +74,7 @@
                     <dt>Special</dt>
                     <dd>CAT</dd>
                 </dl>
-                <p class="items-price">Price: 0.15 ETH</p>
+                <p class="items-price">Price: <span class="item-price-number">0.15 ETH</span></p>
                 <button class="btn btn-buy-open-sea">Buy on OpenSea</button>
                 <button class="btn btn-join-discord">Join Discord</button>
                 <button class="btn btn-join-twitter">Join Twitter</button>
@@ -76,33 +82,33 @@
         </section>
 
         <section class="exploration">
-            <h2 class="exploration-title">EXPLORE COLLECTIONS</h2>
+            <h3 class="exploration-title section-title">EXPLORE COLLECTIONS</h3>
             <article class="exploration-item">
-                <a href="catalog-item.html">
+                <a href="catalog-item.html" class="exploration-link">
                     <img src="exploration_image1.png" alt="exploration Image 1" class="exploration-image">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
             </article>
             <article class="exploration-item">
-                <a href="catalog-item.html">
+                <a href="catalog-item.html" class="exploration-link">
                     <img src="exploration_image2.png" alt="exploration Image 2" class="exploration-image">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
             </article>
             <article class="exploration-item">
-                <a href="catalog-item.html">
+                <a href="catalog-item.html" class="exploration-link">
                     <img src="exploration_image3.png" alt="exploration Image 3" class="exploration-image">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
             </article>
             <article class="exploration-item">
-                <a href="catalog-item.html">
+                <a href="catalog-item.html" class="exploration-link">
                     <img src="exploration_image4.png" alt="exploration Image 4" class="exploration-image">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
             </article>
             <article class="exploration-item">
-                <a href="catalog-item.html">
+                <a href="catalog-item.html" class="exploration-link">
                     <img src="exploration_image5.png" alt="exploration Image 5" class="exploration-image">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
@@ -112,7 +118,7 @@
 
     <footer class="page-footer">
         <section class="join-community">
-            <h2 class="join-community-heading">JOIN OUR COMMUNITY</h2>
+            <h2 class="join-community-heading section-title">JOIN OUR COMMUNITY</h2>
             <p class="join-community-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
             <div class="join-community-buttons">
