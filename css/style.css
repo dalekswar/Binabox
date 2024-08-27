@@ -17,6 +17,10 @@ ul {
     list-style-type: none;
 }
 
+p {
+    color: #C2C3C5;
+}
+
 /* Styles for headers */
 .main-heading {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -91,10 +95,11 @@ header .logo-text {
 }
 
 .main-text {
-    font-family: 'Poppins', Arial, sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    color: #FFFFFF;
+
 }
 
 /* Styles for all buttons */
@@ -112,8 +117,25 @@ header .logo-text {
 }
 
 /* Styles for index.html */
+
 /* main.page-content
-section.main-section
+section.main-section*/
+
+.stat-number {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+
+}
+
+.stat-label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #C2C3C5;
+}
 
 /* Styles section.nft-collection */
 .nft-collection-item {
@@ -124,8 +146,8 @@ section.main-section
     text-align: left;
 }
 
-/* color for visited links */
-.nft-collection-link:visited {
+/* color for links */
+.nft-collection-link {
     color: white;
 }
 
@@ -140,14 +162,6 @@ section.main-section
     font-weight: 400;
     line-height: 28px;
     text-align: center;
-}
-
-.about-us p {
-    font-family: 'Poppins', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
 }
 
 .feature {
@@ -178,7 +192,7 @@ section.main-section
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-
+    color: #21E786;
 }
 
 .step-description {
@@ -187,7 +201,13 @@ section.main-section
     font-weight: 400;
     line-height: 32px;
     text-align: center;
+    color: #FFFFFF;
 
+}
+
+.steps {
+    background-color: #141B22;
+    ;
 }
 
 /* section.road-map {} */
@@ -206,6 +226,8 @@ section.main-section
     font-weight: 400;
     line-height: 28px;
     text-align: left;
+    color: #C2C3C5;
+
 
 }
 
@@ -264,8 +286,6 @@ section.main-section
 .faq-item {
     background-color: rgba(20, 27, 34, 1);
 }
-
-
 
 /* Styles for catalog.html */
 /* main.page-content-catalog {}
@@ -371,6 +391,14 @@ section.main-section
 footer.page-footer-main-page {
     color: #fff;
     text-align: center;
+}
+
+.page-footer-text {
+    color: #C2C3C5;
+}
+
+.nav-link-footer {
+    color: #C2C3C5;
 }
 
 /* footer for catalog.html and catalog-item.html */
