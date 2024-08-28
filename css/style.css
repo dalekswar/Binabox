@@ -298,6 +298,13 @@ section.main-section*/
 /* Styles for catalog.html */
 /* main.page-content-catalog {}
 */
+.collections-container {
+    background-color: rgba(20, 27, 34, 1);
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0.05);
+}
 
 /* color for all links in the page catalog*/
 .breadcrumb-link {
@@ -344,6 +351,9 @@ section.main-section*/
 /* Styles for catalog-item.html */
 /* main.page-content-catalog-item {}
 */
+.items-container {
+    background: rgba(20, 27, 34, 1);
+}
 
 /* color for all links in the page catalog-item*/
 
@@ -415,6 +425,10 @@ footer.page-footer {
     color: #fff;
     padding: 20px;
 
+}
+
+.page-footer-text {
+    color: rgba(255, 255, 255, 1);
 }
 
 /* color for catalog.html links */
