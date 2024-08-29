@@ -17,10 +17,6 @@ ul {
     list-style-type: none;
 }
 
-/* p {
-    color: #C2C3C5;
-} */
-
 /* Styles for headers */
 .main-heading {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -64,7 +60,7 @@ header .logo-text {
 }
 
 /* color for button discord */
-.btn-discord {
+.btn-discord-header {
     background-color: #141B22;
     color: #FFFFFF;
     line-height: 24px;
@@ -120,13 +116,17 @@ header .logo-text {
 
 /* main.page-content
 section.main-section*/
+.btn-whitelist {
+    border: 2px solid rgba(33, 231, 134, 1);
+    color: rgba(255, 255, 255, 1);
+    background-color: #141B22;
+}
 
 .stat-number {
     font-size: 44px;
     font-weight: 400;
     line-height: 56px;
     text-align: left;
-
 }
 
 .stat-label {
@@ -190,6 +190,12 @@ section.main-section*/
     color: rgba(194, 195, 197, 1);
 }
 
+.btn-read-more {
+    border: 2px solid rgba(33, 231, 134, 1);
+    color: rgba(255, 255, 255, 1);
+    background-color: #141B22;
+}
+
 /* section.how-it-works {} */
 .step-title {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -212,7 +218,6 @@ section.main-section*/
 
 .steps {
     background-color: #141B22;
-    ;
 }
 
 /* section.road-map {} */
@@ -284,7 +289,6 @@ section.main-section*/
 }
 
 .faq-item p {
-    font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -376,6 +380,7 @@ section.main-section*/
     font-weight: 400;
     line-height: 30px;
     text-align: left;
+    color: rgba(194, 195, 197, 1);
 }
 
 .items-price {
@@ -390,8 +395,62 @@ section.main-section*/
     color: rgba(33, 231, 134, 1);
 }
 
+.btn-buy-open-sea {
+    background: rgba(33, 231, 134, 1);
+    color: rgba(20, 27, 34, 1);
+}
+
+.btn-join-discord {
+    background: rgba(13, 13, 17, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-join-twitter {
+    background: rgba(13, 13, 17, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
 .nav-items-link-details {
     color: rgba(33, 231, 134, 1);
+}
+
+/* styles for table items-details */
+.items-details {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.column dt {
+    margin-bottom: 5px;
+    color: rgba(194, 195, 197, 1);
+}
+
+.column dd {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* styles for buttons */
+
+.arrow-button.next {
+    background: rgba(33, 231, 134, 1);
+}
+
+.arrow-button.prev {
+    border: 1px solid rgba(33, 231, 134, 1);
+    background-color: rgba(13, 13, 17, 1);
 }
 
 /* section.exploration {}  */
@@ -419,16 +478,26 @@ footer.page-footer-main-page {
     color: #C2C3C5;
 }
 
+.btn-whitelist-footer {
+    background-color: rgba(33, 231, 134, 1);
+    color: rgba(20, 27, 34, 1);
+}
+
+.btn-discord-footer {
+    background-color: rgba(88, 101, 242, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.join-community-text {
+    color: #C2C3C5
+}
+
 /* footer for catalog.html and catalog-item.html */
 footer.page-footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
 
-}
-
-.page-footer-text {
-    color: rgba(255, 255, 255, 1);
 }
 
 /* color for catalog.html links */
@@ -438,6 +507,24 @@ footer.page-footer {
 
 .company-list {
     color: rgba(194, 195, 197, 1);
+}
+
+.footer-text {
+    color: rgba(194, 195, 197, 1);
+}
+
+.join-community {
+    background: linear-gradient(268.28deg, #2333DE -1.34%, #0ABE66 100%);
+}
+
+.btn-discord {
+    background-color: rgba(88, 101, 242, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-whitelist-footer {
+    background: rgba(33, 231, 134, 1);
+    color: rgba(20, 27, 34, 1);
 }
 
 footer .logo-text {
