@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collections</title>
+    <title>Collection</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,11 +26,12 @@
         <nav class="page-header-nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link">HOME</a>
                     <ul class="dropdown">
                         <li class="nav-item">
-                            <a href="catalog.html" class="nav-link">Collections</a>
-                            <a href="catalog-item.html" class="nav-link">Item Detail</a>
+                            <a href="catalog.html" class="nav-link">COLLECTION</a>
+                            <a href="catalog-item.html" class="nav-link">ITEM DETAIL</a>
+                            <a href="contact-us.html" class="nav-link">CONTACT US</a>
                         </li>
                     </ul>
                 </li>
@@ -42,93 +43,150 @@
             </ul>
         </nav>
         <div class="header-buttons">
-            <button class="btn btn-sun"><img src="img/sun.svg" alt="Sun" class="btn-sun-img"></button>
+            <button class="btn-sun"><img src="img/sun.svg" alt="Sun" class="btn-sun-img"></button>
             <button class="btn btn-discord-header"><img src="img/discord.svg" alt=""
                     class="btn-discord-img">Discord</button>
             <button class="btn btn-connect"><img src="img/connect-button.svg" alt="">Connect</button>
         </div>
     </header>
-    <main class="page-content-catalog">
-        <section class="collections">
-            <div class="collections-container">
-                <h3 class="collections-heading">EXPLORE COLLECTIONS</h3>
-                <nav class="breadcrumbs">
-                    <a href="index.html" class="breadcrumb-link">HOME</a> |
-                    <a href="catalog.html" class="breadcrumb-link-collections">COLLECTIONS</a>
-                </nav>
-            </div>
-            <div class="collections-filter">
-                <h4 class="collections-title section-title">All Items</h4>
-                <ul class="filters">
-                    <li class="filters-item"><button class="btn btn-king">King</button></li>
-                    <li class="filters-item"><button class="btn btn-mix">Mix</button></li>
-                    <li class="filters-item"><button class="btn btn-skacura">Skacura</button></li>
-                    <li class="filters-item"><button class="btn btn-clear-all">Clear All</button></li>
+    <div class="collections-container">
+        <h3 class="collections-heading">EXPLORE COLLECTIONS</h3>
+        <nav class="breadcrumbs">
+            <a href="index.html" class="breadcrumb-link">HOME</a> |
+            <a href="catalog.html" class="breadcrumb-link-collections">COLLECTIONS</a>
+        </nav>
+    </div>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <!-- <div class="filter-section">
+                <h6 class="collections-title sidebar-title">CLOTHING</h6>
+                <ul>
+                    <li><input type="checkbox" id="combatant"> Combatant</li>
+                    <li><input type="checkbox" id="ninja"> Ninja</li>
+                    <li><input type="checkbox" id="king"> King</li>
+                    <li><input type="checkbox" id="queen"> Queen</li>
+                    <li><input type="checkbox" id="robot"> Robot</li>
+                </ul>
+            </div> -->
+            <div class="filter-section">
+                <input type="checkbox" id="toggle" class="toggle-checkbox">
+                <label for="toggle" class="collections-title sidebar-title">CLOTHING</label>
+                <ul class="filter-list">
+                    <li><input type="checkbox" id="combatant"> Combatant</li>
+                    <li><input type="checkbox" id="ninja"> Ninja</li>
+                    <li><input type="checkbox" id="king"> King</li>
+                    <li><input type="checkbox" id="queen"> Queen</li>
+                    <li><input type="checkbox" id="robot"> Robot</li>
                 </ul>
             </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search NFT" class="search-input">
-                <button class="btn search-button">Search</button>
+            <div class="filter-section">
+                <h6 class="collections-title sidebar-title">EYES</h6>
+                <ul>
+                    <li><input type="checkbox" id="yellow"> Yellow</li>
+                    <li><input type="checkbox" id="green"> Green</li>
+                    <li><input type="checkbox" id="mix"> Mix</li>
+                    <li><input type="checkbox" id="orange"> Orange</li>
+                    <li><input type="checkbox" id="glow"> Glow</li>
+                    <li><input type="checkbox" id="blue"> Blue</li>
+                </ul>
             </div>
-        </section>
-        <section class="items-grid">
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img.jpg" alt="skirs">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img1.jpg" alt="skirs">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img2.jpg" alt="skirs">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img3.jpg" alt="skirs">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img4.jpg" alt="skirs">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img5.jpg" alt="skirs">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img6.jpg" alt="skirs">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img7.jpg" alt="skirs">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img8.jpg" alt="skirs">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-        </section>
-    </main>
+            <div class="filter-section">
+                <h6 class="collections-title sidebar-title">FACE</h6>
+            </div>
+            <div class="filter-section">
+                <h6 class="collections-title sidebar-title">SKIN</h6>
+            </div>
+            <div class="filter-section">
+                <h6 class="collections-title sidebar-title">BACKGROUND</h6>
+            </div>
+            <div class="filter-section">
+                <h6 class="collections-title sidebar-title">SPECIAL</h6>
+                <ul>
+                    <li><input type="checkbox" id="cat">Cat</li>
+                    <li><input type="checkbox" id="sakura">Sakura</li>
+                    <li><input type="checkbox" id="snake">Snake</li>
+                    <li><input type="checkbox" id="eath">Eath</li>
+                    <li><input type="checkbox" id="water"> Water</li>
+                </ul>
+            </div>
+        </aside>
 
+        <!-- Main Content -->
+        <main class="page-content-catalog">
+            <section class="collections">
+                <div class="collections-filter">
+                    <h4 class="collections-title section-title">All Items</h4>
+                    <ul class="filters">
+                        <li class="filters-item"><button class="btn btn-king">King</button></li>
+                        <li class="filters-item"><button class="btn btn-mix">Mix</button></li>
+                        <li class="filters-item"><button class="btn btn-skacura">Skacura</button></li>
+                        <li class="filters-item"><button class="btn btn-clear-all">Clear All</button></li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search NFT" class="search-input">
+                    <button class="btn search-button"><img src="./img/icon-search.svg" alt="icon-search"></button>
+                </div>
+            </section>
+            <section class="items-grid">
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img.jpg" alt="skirs">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img1.jpg" alt="skirs">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img2.jpg" alt="skirs">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img3.jpg" alt="skirs">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img4.jpg" alt="skirs">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img5.jpg" alt="skirs">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img6.jpg" alt="skirs">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img7.jpg" alt="skirs">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img8.jpg" alt="skirs">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+            </section>
+        </main>
+    </div>
     <footer class="page-footer">
         <section class="join-community">
             <h2 class="join-community-heading section-title">JOIN OUR COMMUNITY</h2>
@@ -164,6 +222,13 @@
                     <li class="company-item">Help Center</li>
                 </ul>
             </nav>
+            <div class="subscription-block">
+                <h3 class="subscription-block-title">SUBSCRIBE</h3>
+                <form class="subscription-block-form" action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button class="btn button-submit" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
             <p class="footer-text">BINABOX 2022 - ALL rights reserved</p>
             <ul class="social-media-icons">
                 <li>

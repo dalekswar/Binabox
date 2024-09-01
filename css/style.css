@@ -75,6 +75,11 @@ header .logo-text {
 /* color for button sun */
 .btn-sun {
     background-color: #141B22;
+    width: 48px;
+    height: 48px;
+    gap: 0px;
+    border-radius: 41px 41px 41px 41px;
+    opacity: 0px;
 }
 
 /* Navigation styles for index.html catalog.html and catalog-item.html */
@@ -106,6 +111,10 @@ header .logo-text {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    width: 154px;
+    height: 56px;
+    padding: 12px 24px;
+    gap: 8px;
 }
 
 .btn-connect-wallet {
@@ -265,13 +274,13 @@ section.main-section*/
 
 }
 
-.our-team-member p {
+/* .our-team-member p {
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     text-align: center;
 
-}
+} */
 
 .our-team-post {
     color: rgba(194, 195, 197, 1);
@@ -288,12 +297,12 @@ section.main-section*/
     text-align: left;
 }
 
-.faq-item p {
+/* .faq-item p {
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
-}
+} */
 
 .faq-item {
     background-color: rgba(20, 27, 34, 1);
@@ -302,6 +311,62 @@ section.main-section*/
 /* Styles for catalog.html */
 /* main.page-content-catalog {}
 */
+/* styles.css */
+
+.filter-section {
+    position: relative;
+}
+
+.toggle-checkbox {
+    display: none;
+    /* Скрываем чекбокс */
+}
+
+.collections-title {
+    cursor: pointer;
+    /* Меняем курсор при наведении на заголовок */
+}
+
+.filter-list {
+    display: none;
+    /* Скрываем список по умолчанию */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-list li {
+    margin: 5px 0;
+}
+
+/* Показываем список, когда чекбокс отмечен */
+.toggle-checkbox:checked~.filter-list {
+    display: block;
+}
+
+.container {
+    display: flex;
+    width: 1410px;
+    height: 1378px;
+    top: 450px;
+    left: 255px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 100px;
+}
+
+.sidebar {
+    width: 280px;
+    height: 970px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 0px 80px 0px 0px;
+}
+
+.filter-section {
+    background-color: #141B22;
+}
+
 .collections-container {
     background-color: rgba(20, 27, 34, 1);
 }
@@ -344,13 +409,13 @@ section.main-section*/
 }
 
 /* section.items-grid {} */
-.item p {
+/* .item p {
     font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
-}
+} */
 
 /* Styles for catalog-item.html */
 /* main.page-content-catalog-item {}
@@ -374,6 +439,11 @@ section.main-section*/
 }
 
 /* section.items {} */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .items-text {
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 20px;
@@ -462,6 +532,71 @@ section.main-section*/
     text-align: left;
 }
 
+.sidebar-title {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.search-bar input {
+    background-color: rgba(20, 27, 34, 1);
+}
+
+/* styles for contact-us.html */
+.form {
+    text-align: center;
+    width: 690px;
+    height: 536px;
+}
+
+.form-heading,
+.form-paragraph {
+    margin: 0 auto 16px auto;
+    max-width: 100%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-grid input,
+.form-grid textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(194, 195, 197, 0.15);
+    color: #C2C3C5;
+
+}
+
+.form-grid input[type="tel"] {
+    grid-column: 1 / 3;
+    /* Make the phone number input span across two columns */
+}
+
+.form-grid textarea {
+    grid-column: 1 / 3;
+    resize: vertical;
+    height: 100px;
+}
+
+.form-grid button {
+    grid-column: 1 / 3;
+    justify-self: center;
+    padding: 10px 20px;
+}
+
+.btn-form {
+    background: #0D0D11;
+    border: 1px solid rgba(33, 231, 134, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
 /* Styles for footer */
 
 /* footer index.html */
@@ -478,11 +613,6 @@ footer.page-footer-main-page {
     color: #C2C3C5;
 }
 
-.btn-whitelist-footer {
-    background-color: rgba(33, 231, 134, 1);
-    color: rgba(20, 27, 34, 1);
-}
-
 .btn-discord-footer {
     background-color: rgba(88, 101, 242, 1);
     color: rgba(255, 255, 255, 1);
@@ -492,9 +622,37 @@ footer.page-footer-main-page {
     color: #C2C3C5
 }
 
-/* footer for catalog.html and catalog-item.html */
+.subscription-block-main-footer input {
+    width: 690px;
+    height: 56px;
+    top: 220px;
+    left: 614px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    background-color: rgba(20, 27, 34, 1);
+    color: rgba(194, 195, 197, 1);
+}
+
+.button-subscribe {
+    width: Fixed (154px)px;
+    height: Fixed (56px)px;
+    top: 220px;
+    left: 1150px;
+    padding: 12px 24px 12px 24px;
+    gap: 8px;
+    opacity: 0px;
+    background: rgba(33, 231, 134, 1);
+    color: rgba(4, 11, 17, 1);
+}
+
+/* footer for catalog.html and catalog-item.html contact-us.html*/
 footer.page-footer {
-    background-color: #333;
+    background-color: rgba(20, 27, 34, 1);
     color: #fff;
     padding: 20px;
 
@@ -515,6 +673,13 @@ footer.page-footer {
 
 .join-community {
     background: linear-gradient(268.28deg, #2333DE -1.34%, #0ABE66 100%);
+    width: 1410px;
+    height: 246px;
+    top: -104px;
+    left: 255px;
+    gap: 0px;
+    border-radius: 8px 0px 0px 0px;
+    opacity: 0px;
 }
 
 .btn-discord {
@@ -525,6 +690,24 @@ footer.page-footer {
 .btn-whitelist-footer {
     background: rgba(33, 231, 134, 1);
     color: rgba(20, 27, 34, 1);
+}
+
+.subscription-block-form input {
+    width: 287px;
+    height: 56px;
+    padding: 14px 24px;
+    gap: 10px;
+    background-color: rgba(20, 27, 34, 1);
+    color: rgba(194, 195, 197, 1);
+}
+
+.button-submit {
+    width: 154px;
+    height: 56px;
+    padding: 12px 24px;
+    gap: 8px;
+    background: rgba(33, 231, 134, 1);
+    color: rgba(4, 11, 17, 1);
 }
 
 footer .logo-text {
