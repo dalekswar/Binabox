@@ -69,7 +69,6 @@ header .logo-text {
 /* color for button connect */
 .btn-connect {
     background-color: #21E786;
-
 }
 
 /* color for button sun */
@@ -119,6 +118,7 @@ header .logo-text {
 
 .btn-connect-wallet {
     background-color: rgba(33, 231, 134, 1);
+    width: 181px;
 }
 
 /* Styles for index.html */
@@ -541,8 +541,53 @@ section.main-section*/
 
 }
 
-.search-bar input {
+.search-bar {
+    display: flex;
+    align-items: center;
     background-color: rgba(20, 27, 34, 1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 280px;
+    height: 48px;
+    top: 4px;
+    left: 1130px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    color: rgba(136, 139, 142, 1);
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-input::placeholder {
+    color: #666;
+    /* Placeholder color */
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px 0px 0px 240px; */
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    left: 1370px;
+    gap: 0px;
+    opacity: 0px;
 }
 
 /* styles for contact-us.html */
