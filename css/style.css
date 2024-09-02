@@ -312,6 +312,16 @@ section.main-section*/
 /* main.page-content-catalog {}
 */
 /* styles.css */
+.collections-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.collections-filter-items .filters-item {
+    display: inline-block;
+}
 
 .filter-section {
     position: relative;
