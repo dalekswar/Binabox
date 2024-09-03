@@ -8,8 +8,8 @@
 body {
     font-family: 'Poppins', 'Bakbak One', Arial, sans-serif;
     line-height: 22px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(13, 13, 17, 1);
+    color: #FFFFFF;
+    background-color: #0D0D11;
 }
 
 /* delete dots in ul*/
@@ -18,6 +18,26 @@ ul {
 }
 
 /* Styles for headers */
+.logo-img-header {
+    width: 36px;
+    height: 40px;
+}
+
+.btn-sun-img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-discord-img {
+    width: 24px;
+    height: 24px;
+}
+
+.connect-img {
+    width: 24px;
+    height: 24px;
+}
+
 .main-heading {
     font-family: 'Bakbak One', Arial, sans-serif;
     font-weight: 400;
@@ -34,12 +54,12 @@ ul {
 }
 
 .color-binabox {
-    color: rgba(33, 231, 134, 1);
+    color: #21E786;
 }
 
 /* Styles for header for index, catalog, catalog-item*/
 header.page-header {
-    background-color: rgba(4, 11, 17, 1);
+    background-color: #040B11;
     font-family: 'Bakbak One', Arial, sans-serif;
     text-decoration: none;
     font-size: 16px;
@@ -87,7 +107,7 @@ header .logo-text {
 
 /* color for all links .nav-link (index, catalog, catalog-item) */
 .nav-link {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
 }
 
 .main-text {
@@ -109,16 +129,22 @@ header .logo-text {
 }
 
 .btn-connect-wallet {
-    background-color: rgba(33, 231, 134, 1);
+    background-color: #21E786;
+    ;
 }
 
 /* Styles for index.html */
 
 /* main.page-content
 section.main-section*/
+.main-section-img {
+    width: 970px;
+    height: 846px;
+}
+
 .btn-whitelist {
-    border: 2px solid rgba(33, 231, 134, 1);
-    color: rgba(255, 255, 255, 1);
+    border: 2px solid #21E786;
+    color: rgb(255, 255, 255);
     background-color: #141B22;
 }
 
@@ -153,6 +179,8 @@ section.main-section*/
 
 .nft-collection-img {
     background-color: rgba(255, 255, 255, 0.05);
+    width: 290px;
+    height: 290px;
 }
 
 /* Styled for section.about-us */
@@ -183,20 +211,25 @@ section.main-section*/
     font-weight: 400;
     line-height: 28px;
     text-align: left;
-    color: rgba(194, 195, 197, 1);
+    color: #C2C3C5;
 }
 
 .about-us-description {
-    color: rgba(194, 195, 197, 1);
+    color: #C2C3C5;
 }
 
 .btn-read-more {
-    border: 2px solid rgba(33, 231, 134, 1);
-    color: rgba(255, 255, 255, 1);
+    border: 2px solid #21E786;
+    color: rgb(255, 255, 255);
     background-color: #141B22;
 }
 
 /* section.how-it-works {} */
+.step-img {
+    width: 92px;
+    height: 72px;
+}
+
 .step-title {
     font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 22px;
@@ -221,6 +254,21 @@ section.main-section*/
 }
 
 /* section.road-map {} */
+.big-square {
+    width: 470px;
+    height: 470px;
+}
+
+.small-square {
+    width: 225px;
+    height: 225px;
+}
+
+.road-map-img {
+    width: 24px;
+    height: 24px;
+}
+
 .road-map-heading-phase {
     font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 36px;
@@ -256,6 +304,16 @@ section.main-section*/
 
 /* section.our-team {} */
 
+.our-tean-img {
+    width: 120px;
+    height: 120px;
+}
+
+.links-img {
+    width: 20px;
+    height: 20px;
+}
+
 .our-team-member h3 {
     font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 24px;
@@ -274,10 +332,47 @@ section.main-section*/
 }
 
 .our-team-post {
-    color: rgba(194, 195, 197, 1);
+    color: #C2C3C5;
 }
 
 /* section.partners {} */
+.partners-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.partners-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.partners-container div:nth-child(2),
+/* Binance Chain */
+.partners-container div:nth-child(4),
+/* Zerion */
+.partners-container div:nth-child(6),
+/* Instadapp */
+.partners-container div:nth-child(7),
+/* AToken */
+.partners-container div:nth-child(9),
+/* Giving Block */
+.partners-container div:nth-child(11),
+/* Pillar */
+.partners-container div:nth-child(14),
+/* Unstoppable */
+.partners-container div:nth-child(16),
+/* BitPay */
+.partners-container div:nth-child(18) {
+    /* Huobi Wallet */
+    background-color: rgba(20, 27, 34, 1);
+}
+
+.partners-img {
+    width: 162px;
+    height: 60px;
+}
 
 /* section.faqs {} */
 .faq-item faq-item-heading {
@@ -296,14 +391,14 @@ section.main-section*/
 }
 
 .faq-item {
-    background-color: rgba(20, 27, 34, 1);
+    background-color: rgb(20, 27, 34);
 }
 
 /* Styles for catalog.html */
 /* main.page-content-catalog {}
 */
 .collections-container {
-    background-color: rgba(20, 27, 34, 1);
+    background-color: rgb(20, 27, 34);
 }
 
 .item {
@@ -312,20 +407,20 @@ section.main-section*/
 
 /* color for all links in the page catalog*/
 .breadcrumb-link {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
 }
 
 .breadcrumb-link-collections {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
 }
 
-.social-icon {
+/* .social-icon {
     color: rgba(194, 195, 197, 1);
 
-}
+} */
 
 .item-link {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -340,10 +435,16 @@ section.main-section*/
 }
 
 .breadcrumb-link-collections {
-    color: rgba(33, 231, 134, 1);
+    color: #21E786;
 }
 
 /* section.items-grid {} */
+
+.item-img {
+    width: 290px;
+    height: 290px;
+}
+
 .item p {
     font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 20px;
@@ -355,6 +456,26 @@ section.main-section*/
 /* Styles for catalog-item.html */
 /* main.page-content-catalog-item {}
 */
+.skeleton-img {
+    width: 690px;
+    height: 690px;
+}
+
+.items-icons {
+    width: 24px;
+    height: 24px;
+}
+
+.exploration-image {
+    width: 290px;
+    height: 290px;
+}
+
+.arrow-img {
+    width: 26px;
+    height: 14px;
+}
+
 .items-container {
     background: rgba(20, 27, 34, 1);
 }
@@ -362,15 +483,15 @@ section.main-section*/
 /* color for all links in the page catalog-item*/
 
 .nav-items-link {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
 }
 
 .nav-items-link-details {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
 }
 
 .exploration-link {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
 }
 
 /* section.items {} */
@@ -380,7 +501,7 @@ section.main-section*/
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-    color: rgba(194, 195, 197, 1);
+    color: #C2C3C5;
 }
 
 .items-price {
@@ -392,26 +513,26 @@ section.main-section*/
 }
 
 .item-price-number {
-    color: rgba(33, 231, 134, 1);
+    color: #21E786;
 }
 
 .btn-buy-open-sea {
-    background: rgba(33, 231, 134, 1);
-    color: rgba(20, 27, 34, 1);
+    background-color: #21E786;
+    color: #141B22;
 }
 
 .btn-join-discord {
-    background: rgba(13, 13, 17, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: rgba(13, 13, 17, 1);
+    color: rgb(248, 243, 243);
 }
 
 .btn-join-twitter {
-    background: rgba(13, 13, 17, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: rgba(13, 13, 17, 1);
+    color: rgb(255, 255, 255);
 }
 
 .nav-items-link-details {
-    color: rgba(33, 231, 134, 1);
+    color: #21E786;
 }
 
 /* styles for table items-details */
@@ -445,11 +566,11 @@ section.main-section*/
 /* styles for buttons */
 
 .arrow-button.next {
-    background: rgba(33, 231, 134, 1);
+    background-color: #21E786;
 }
 
 .arrow-button.prev {
-    border: 1px solid rgba(33, 231, 134, 1);
+    border: 1px solid #21E786;
     background-color: rgba(13, 13, 17, 1);
 }
 
@@ -479,17 +600,27 @@ footer.page-footer-main-page {
 }
 
 .btn-whitelist-footer {
-    background-color: rgba(33, 231, 134, 1);
+    background-color: #21E786;
     color: rgba(20, 27, 34, 1);
 }
 
 .btn-discord-footer {
     background-color: rgba(88, 101, 242, 1);
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
 }
 
 .join-community-text {
     color: #C2C3C5
+}
+
+.footer-icon-img {
+    width: 22px;
+    height: 19px;
+}
+
+.logo-img {
+    width: 24px;
+    height: 27px;
 }
 
 /* footer for catalog.html and catalog-item.html */
@@ -500,17 +631,32 @@ footer.page-footer {
 
 }
 
+.social-icons-img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo-img-footer {
+    width: 32px;
+    height: 36px;
+}
+
+.discord-button-img {
+    width: 24px;
+    height: 24px;
+}
+
 /* color for catalog.html links */
 .subscribe-list {
-    color: rgba(194, 195, 197, 1);
+    color: #C2C3C5;
 }
 
 .company-list {
-    color: rgba(194, 195, 197, 1);
+    color: #C2C3C5;
 }
 
 .footer-text {
-    color: rgba(194, 195, 197, 1);
+    color: #C2C3C5;
 }
 
 .join-community {
@@ -518,13 +664,13 @@ footer.page-footer {
 }
 
 .btn-discord {
-    background-color: rgba(88, 101, 242, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: #5865F2;
+    color: rgb(255, 255, 255);
 }
 
 .btn-whitelist-footer {
-    background: rgba(33, 231, 134, 1);
-    color: rgba(20, 27, 34, 1);
+    background: #21E786;
+    color: #141B22;
 }
 
 footer .logo-text {
