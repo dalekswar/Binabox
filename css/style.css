@@ -18,25 +18,6 @@ ul {
 }
 
 /* Styles for headers */
-.logo-img-header {
-    width: 36px;
-    height: 40px;
-}
-
-.btn-sun-img {
-    width: 24px;
-    height: 24px;
-}
-
-.btn-discord-img {
-    width: 24px;
-    height: 24px;
-}
-
-.connect-img {
-    width: 24px;
-    height: 24px;
-}
 
 .main-heading {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -137,10 +118,6 @@ header .logo-text {
 
 /* main.page-content
 section.main-section*/
-.main-section-img {
-    width: 970px;
-    height: 846px;
-}
 
 .btn-whitelist {
     border: 2px solid #21E786;
@@ -165,6 +142,7 @@ section.main-section*/
 
 /* Styles section.nft-collection */
 .nft-collection-item {
+    background-color: rgba(255, 255, 255, 0.05);
     font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -177,11 +155,6 @@ section.main-section*/
     color: white;
 }
 
-.nft-collection-img {
-    background-color: rgba(255, 255, 255, 0.05);
-    width: 290px;
-    height: 290px;
-}
 
 /* Styled for section.about-us */
 .about-us {
@@ -254,20 +227,6 @@ section.main-section*/
 }
 
 /* section.road-map {} */
-.big-square {
-    width: 470px;
-    height: 470px;
-}
-
-.small-square {
-    width: 225px;
-    height: 225px;
-}
-
-.road-map-img {
-    width: 24px;
-    height: 24px;
-}
 
 .road-map-heading-phase {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -304,14 +263,8 @@ section.main-section*/
 
 /* section.our-team {} */
 
-.our-tean-img {
-    width: 120px;
-    height: 120px;
-}
-
-.links-img {
-    width: 20px;
-    height: 20px;
+.our-team-member {
+    background-color: #141B22;
 }
 
 .our-team-member h3 {
@@ -366,12 +319,7 @@ section.main-section*/
 /* BitPay */
 .partners-container div:nth-child(18) {
     /* Huobi Wallet */
-    background-color: rgba(20, 27, 34, 1);
-}
-
-.partners-img {
-    width: 162px;
-    height: 60px;
+    background-color: rgb(20, 27, 34);
 }
 
 /* section.faqs {} */
@@ -439,11 +387,6 @@ section.main-section*/
 }
 
 /* section.items-grid {} */
-
-.item-img {
-    width: 290px;
-    height: 290px;
-}
 
 .item p {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -618,32 +561,12 @@ footer.page-footer-main-page {
     height: 19px;
 }
 
-.logo-img {
-    width: 24px;
-    height: 27px;
-}
-
 /* footer for catalog.html and catalog-item.html */
 footer.page-footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
 
-}
-
-.social-icons-img {
-    width: 20px;
-    height: 20px;
-}
-
-.logo-img-footer {
-    width: 32px;
-    height: 36px;
-}
-
-.discord-button-img {
-    width: 24px;
-    height: 24px;
 }
 
 /* color for catalog.html links */
@@ -660,7 +583,10 @@ footer.page-footer {
 }
 
 .join-community {
-    background: linear-gradient(268.28deg, #2333DE -1.34%, #0ABE66 100%);
+    background-image: url(/img/join-community-gradient.svg), url(/img/join-community-gradient.svg), url(/img/join-community-gradient.svg), url(/img/join-community-gradient.svg), linear-gradient(268.28deg, #2333DE -1.34%, #0ABE66 100%);
+    background-position: top left, bottom right, center center;
+    background-size: 255px 255px, 137px 137px, 321px 321px, cover;
+    background-repeat: no-repeat;
 }
 
 .btn-discord {
