@@ -38,6 +38,10 @@ ul {
     color: #21E786;
 }
 
+.main-content {
+    padding: 0 100px;
+}
+
 /* Styles for header for index, catalog, catalog-item contact-us*/
 header.page-header {
     background-color: #040B11;
@@ -46,11 +50,18 @@ header.page-header {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 10%;
-    width: 1920px;
-    height: 108px;
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
 }
 
 .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +71,37 @@ header.page-header {
     display: flex;
     align-items: center;
 }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 32px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown .nav-link {
+    display: block;
+    white-space: nowrap;
+}
+
 
 /* Remove underline from the logo link */
 
@@ -106,6 +148,9 @@ header .logo-text {
 /* color for all links .nav-link (index, catalog, catalog-item) */
 .nav-link {
     color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .main-text {
@@ -119,14 +164,15 @@ header .logo-text {
 /* Styles for all buttons */
 
 .btn {
+    gap: 8px;
     font-family: 'Bakbak One';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    text-align: left;
+    text-align: center;
     width: 154px;
     height: 56px;
-    padding: 12px 24px;
+    padding: 12px, 24px, 12px, 24px;
     gap: 8px;
 }
 
@@ -138,11 +184,24 @@ header .logo-text {
 
 /* main.page-content
 section.main-section*/
+.main-section {
+    display: flex;
+}
 
 .btn-whitelist {
     border: 2px solid #21E786;
     color: rgb(255, 255, 255);
     background-color: #141B22;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-item {
+    text-align: center;
 }
 
 .stat-number {
@@ -158,9 +217,15 @@ section.main-section*/
     line-height: 26px;
     text-align: left;
     color: #C2C3C5;
+    margin-top: 10px;
 }
 
 /* Styles section.nft-collection */
+.nft-collection {
+    display: flex;
+
+}
+
 .nft-collection-item {
     background-color: rgba(255, 255, 255, 0.05);
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -168,6 +233,7 @@ section.main-section*/
     font-weight: 400;
     line-height: 28px;
     text-align: left;
+    margin-right: 30px;
 }
 
 /* color for links */
@@ -183,12 +249,32 @@ section.main-section*/
     font-weight: 400;
     line-height: 28px;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
 }
 
 .feature {
     background-color: #222;
     color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
 }
+
 
 .feature-title {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -196,15 +282,36 @@ section.main-section*/
     font-weight: 400;
     line-height: 30px;
     text-align: left;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    z-index: 1;
+    position: relative;
+    margin-top: 30px;
 }
 
 .feature-description {
+    font-size: 16px;
+    color: #aaa;
+    margin-left: 20px;
+    z-index: 1;
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
     color: #C2C3C5;
+}
+
+.feature-number {
+    font-size: 72px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px #21E786;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 0;
 }
 
 .about-us-description {
@@ -215,6 +322,17 @@ section.main-section*/
     border: 2px solid #21E786;
     color: rgb(255, 255, 255);
     background-color: #141B22;
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #21E786;
+}
+
+.btn-read-more:hover {
+    background-color: #00cc66;
 }
 
 /* section.how-it-works {} */
