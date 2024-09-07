@@ -37,7 +37,7 @@ ul {
     color: rgba(33, 231, 134, 1);
 }
 
-/* Styles for header for index, catalog, catalog-item*/
+/* Styles for header for index, catalog, catalog-item contact-us*/
 header.page-header {
     background-color: rgba(4, 11, 17, 1);
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -45,6 +45,19 @@ header.page-header {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 10%;
+    width: 1920px;
+    height: 108px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-logo {
+    display: flex;
+    align-items: center;
 }
 
 /* Remove underline from the logo link */
