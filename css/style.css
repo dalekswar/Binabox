@@ -336,6 +336,19 @@ section.main-section*/
 }
 
 /* section.how-it-works {} */
+
+.how-it-works {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.how-it-works-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
 .step-img {
     width: 92px;
     height: 72px;
@@ -361,10 +374,40 @@ section.main-section*/
 }
 
 .steps {
-    background-color: #141B22;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.step {
+    background-color: #1A1F25;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
 }
 
 /* section.road-map {} */
+
+.road-map {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.road-map-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
 
 .road-map-heading-phase {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -397,6 +440,90 @@ section.main-section*/
 
 .road-map-container {
     background-color: rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.image-big-square {
+    grid-column: 1 / span 1;
+    grid-row: span 2;
+}
+
+.image-small-square-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.image-big-square img,
+.image-small-square img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.road-map-heading-phase {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.road-map-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.road-map-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #aaa;
+}
+
+.road-map-item img {
+    margin-right: 10px;
+}
+
+.road-map-slider {
+    margin-top: 50px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 20px 0;
+}
+
+.slider-item {
+    color: #aaa;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.slider-item.active {
+    color: #00ff85;
+}
+
+.slider-item:hover {
+    color: #00ff85;
 }
 
 /* section.our-team {} */
