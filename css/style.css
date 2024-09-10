@@ -753,13 +753,12 @@ footer.page-footer-main-page {
 }
 
 .button-subscribe {
-    width: Fixed (154px)px;
-    height: Fixed (56px)px;
+    width: 154px;
+    height: 56px;
     top: 220px;
     left: 1150px;
     padding: 12px 24px 12px 24px;
     gap: 8px;
-    opacity: 0px;
     background: rgba(33, 231, 134, 1);
     color: rgba(4, 11, 17, 1);
 }
