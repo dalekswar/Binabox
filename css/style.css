@@ -90,9 +90,10 @@ header .logo-text {
     color: rgb(143, 99, 156);
 } */
 
-/* color for all links .nav-link (index, catalog, catalog-item) */
+/* properties for all links (index, catalog, catalog-item, contact-us) */
 .nav-link {
     color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
 
 .main-text {
@@ -370,17 +371,14 @@ section.main-section*/
 
 .toggle-checkbox {
     display: none;
-    /* Скрываем чекбокс */
 }
 
 .collections-title {
     cursor: pointer;
-    /* Меняем курсор при наведении на заголовок */
 }
 
 .filter-list {
     display: none;
-    /* Скрываем список по умолчанию */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -390,7 +388,6 @@ section.main-section*/
     margin: 5px 0;
 }
 
-/* Показываем список, когда чекбокс отмечен */
 .toggle-checkbox:checked~.filter-list {
     display: block;
 }
@@ -399,8 +396,6 @@ section.main-section*/
     display: flex;
     width: 1410px;
     height: 1378px;
-    top: 450px;
-    left: 255px;
     gap: 0px;
     opacity: 0px;
     margin: 100px;
@@ -755,8 +750,6 @@ footer.page-footer-main-page {
 .button-subscribe {
     width: 154px;
     height: 56px;
-    top: 220px;
-    left: 1150px;
     padding: 12px 24px 12px 24px;
     gap: 8px;
     background: rgba(33, 231, 134, 1);
@@ -790,7 +783,6 @@ footer.page-footer {
     background-position: top left, bottom right, top 0px left 280px;
     background-size: 255px 255px, 321px 321px, 137px 137px, cover, contain;
     background-repeat: no-repeat;
-    width: 1410px;
     height: 246px;
 }
 
