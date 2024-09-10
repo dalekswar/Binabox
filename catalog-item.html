@@ -19,7 +19,7 @@
     <header class="page-header">
         <div class="page-header-logo">
             <a href="index.html" class="logo">
-                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
+                <img src="img/logo.svg" alt="Company Logo" class="logo-img-header">
             </a>
             <span class="logo-text">BINABOX</span>
         </div>
@@ -42,42 +42,68 @@
             </ul>
         </nav>
         <div class="header-buttons">
-            <button class="btn btn-sun"><img src="img/sun.svg" alt="Sun" class="btn-sun-img">Sun</button>
-            <button class="btn btn-discord"><img src="img/discord.svg" alt="" class="btn-discord-img">Discord</button>
-            <button class="btn btn-connect"><img src="img/connect-button.svg" alt="">Connect</button>
+            <button class="btn btn-sun"><img src="./img/sun.svg" alt="Sun" width="24" height="24"></button>
+            <button class="btn btn-discord-header"><img src="./img/discord.svg" alt="Discord" width="24"
+                    height="24">Discord</button>
+            <button class="btn btn-connect"><img src="./img/connect-button.svg" alt="Connect" width="24"
+                    height="24">Connect</button>
         </div>
     </header>
     <main class="page-content-catalog-item">
         <section class="items">
-            <h3 class="items-heading section-title">ITEM DETAIL</h3>
-            <nav class="nav-items">
-                <a href="index.html" class="nav-items-link">HOME</a> |
-                <a href="catalog-item.html" class="nav-items-link-details">ITEM DETAIL</a>
-            </nav>
-            <img src="path/to/skeleton_image.png" alt="Skeleton Image">
-            <div>
+            <div class="items-container">
+                <h3 class="items-heading section-title">ITEM DETAIL</h3>
+                <nav class="nav-items">
+                    <a href="index.html" class="nav-items-link">HOME</a> |
+                    <a href="catalog-item.html" class="nav-items-link-details">ITEM DETAIL</a>
+                </nav>
+            </div>
+            <div class="items-main-container">
+                <img src="./img/skeleton-image.jpg" alt="Skeleton Image" width="690" height="690">
                 <h2 class="items-title section-title">SKISIRS#4587</h2>
                 <p class="items-text">As the first hero of the Neoh Universe, collection has over 9,999 unique skins
                     drawn from the
                     different missions and challenges he faced throughout his life.</p>
-                <dl class="items-details">
-                    <dt>Clothing</dt>
-                    <dd>SNAKE</dd>
-                    <dt>Eyes</dt>
-                    <dd>MIX</dd>
-                    <dt>Face</dt>
-                    <dd>GREEN</dd>
-                    <dt>Skin</dt>
-                    <dd>GREEN</dd>
-                    <dt>Background</dt>
-                    <dd>GREEN LIGHT</dd>
-                    <dt>Special</dt>
-                    <dd>CAT</dd>
-                </dl>
+                <div class="items-details" style="background-color: rgba(20, 27, 34, 1);">
+                    <div class="row">
+                        <div class="column">
+                            <dt>Clothing</dt>
+                            <dd>SNAKE</dd>
+                        </div>
+                        <div class="column">
+                            <dt>Eyes</dt>
+                            <dd>MIX</dd>
+                        </div>
+                        <div class="column">
+                            <dt>Face</dt>
+                            <dd>GREEN</dd>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <dt>Skin</dt>
+                            <dd>GREEN</dd>
+                        </div>
+                        <div class="column">
+                            <dt>Background</dt>
+                            <dd>GREEN LIGHT</dd>
+                        </div>
+                        <div class="column">
+                            <dt>Special</dt>
+                            <dd>CAT</dd>
+                        </div>
+                    </div>
+                </div>
                 <p class="items-price">Price: <span class="item-price-number">0.15 ETH</span></p>
-                <button class="btn btn-buy-open-sea">Buy on OpenSea</button>
-                <button class="btn btn-join-discord">Join Discord</button>
-                <button class="btn btn-join-twitter">Join Twitter</button>
+                <button class="btn btn-buy-open-sea"><img src="./img/black-bag.svg" alt="open-sea" width="24"
+                        height="24">BUY ON
+                    OPENSEA</button>
+                <button class="btn btn-join-discord"><img src="./img/join-discord.svg" alt="discord" width="24"
+                        height="24">JOIN
+                    DISCORD</button>
+                <button class="btn btn-join-twitter"><img src="./img/join-twitter.svg" alt="twitter" width="24"
+                        height="24">JOIN
+                    TWITTER</button>
             </div>
         </section>
 
@@ -85,34 +111,42 @@
             <h3 class="exploration-title section-title">EXPLORE COLLECTIONS</h3>
             <article class="exploration-item">
                 <a href="catalog-item.html" class="exploration-link">
-                    <img src="exploration_image1.png" alt="exploration Image 1" class="exploration-image">
+                    <img src="./img/nft-collection-img.jpg" alt="exploration Image 1" width="290" height="290">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
             </article>
             <article class="exploration-item">
                 <a href="catalog-item.html" class="exploration-link">
-                    <img src="exploration_image2.png" alt="exploration Image 2" class="exploration-image">
+                    <img src="./img/nft-collection-img1.jpg" alt="exploration Image 2" width="290" height="290">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
             </article>
             <article class="exploration-item">
                 <a href="catalog-item.html" class="exploration-link">
-                    <img src="exploration_image3.png" alt="exploration Image 3" class="exploration-image">
+                    <img src="./img/nft-collection-img2.jpg" alt="exploration Image 3" width="290" height="290">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
             </article>
             <article class="exploration-item">
                 <a href="catalog-item.html" class="exploration-link">
-                    <img src="exploration_image4.png" alt="exploration Image 4" class="exploration-image">
+                    <img src="./img/nft-collection-img3.jpg" alt="exploration Image 4" width="290" height="290">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
             </article>
             <article class="exploration-item">
                 <a href="catalog-item.html" class="exploration-link">
-                    <img src="exploration_image5.png" alt="exploration Image 5" class="exploration-image">
+                    <img src="./img/nft-collection-img4.jpg" alt="exploration Image 5" width="290" height="290">
                     <p class="exploration-text">SKISIRS #02</p>
                 </a>
             </article>
+            <div class="arrow-buttons">
+                <button class="arrow-button prev">
+                    <img src="./img/arrow-prev.svg" alt="arrow-prev" width="26" height="14">
+                </button>
+                <button class="arrow-button next">
+                    <img src="./img/arrow-next.svg" alt="arrow-next" width="26" height="14">
+                </button>
+            </div>
         </section>
     </main>
 
@@ -122,14 +156,15 @@
             <p class="join-community-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
             <div class="join-community-buttons">
-                <button class="btn btn-discord">Discord</button>
-                <button class="btn btn-whitelist">Whitelist Now</button>
+                <button class="btn btn-discord"><img src="./img/discord.svg" alt="discord" width="24"
+                        height="24">Discord</button>
+                <button class="btn btn-whitelist-footer">Whitelist Now</button>
             </div>
         </section>
         <div class="footer">
             <div class="page-footer-logo">
                 <a href="index.html" class="logo">
-                    <img src="img/logo.svg" alt="Company Logo" class="logo-img">
+                    <img src="img/logo.svg" alt="Company Logo" width="32" height="36">
                 </a>
                 <span class="logo-text">BINABOX</span>
             </div>
@@ -152,14 +187,38 @@
                 </ul>
             </nav>
             <p class="footer-text">BINABOX 2022 - ALL rights reserved</p>
-            <div class="social-media-icons">
-                <a href="#" class="social-icon facebook">Facebook</a>
-                <a href="#" class="social-icon twitter">Twitter</a>
-                <a href="#" class="social-icon telegram">Telegram</a>
-                <a href="#" class="social-icon youtube">YouTube</a>
-                <a href="#" class="social-icon tiktok">TikTok</a>
-                <a href="#" class="social-icon discord">Discord</a>
-            </div>
+            <ul class="social-media-icons">
+                <li>
+                    <a href="#" class="social-icon facebook">
+                        <img src="./img/facebook-footer.svg" alt="Facebook Icon" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon twitter">
+                        <img src="./img/twitter-footer.svg" alt="Twitter Icon" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon telegram">
+                        <img src="./img/telegram-footer.svg" alt="Telegram Icon" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon youtube">
+                        <img src="./img/you-tube-footer.svg" alt="YouTube Icon" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon tiktok">
+                        <img src="./img/tiktok-footer.svg" alt="TikTok Icon" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon discord">
+                        <img src="./img/doscord-footer.svg" alt="Discord Icon" width="20" height="20">
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 
