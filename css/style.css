@@ -60,27 +60,6 @@ header .logo-text {
     line-height: 42px;
 }
 
-/* color for button discord */
-.btn-discord-header {
-    background-color: #141B22;
-    color: #FFFFFF;
-    line-height: 24px;
-}
-
-/* color for button connect */
-.btn-connect {
-    background-color: #21E786;
-}
-
-/* color for button sun */
-.btn-sun {
-    background-color: #141B22;
-    width: 48px;
-    height: 48px;
-    gap: 0;
-    border-radius: 41px 41px 41px 41px;
-}
-
 /* Navigation styles for index.html catalog.html and catalog-item.html */
 /* nav.pageheader-nav {} */
 
@@ -106,7 +85,7 @@ header .logo-text {
 /* Styles for all buttons */
 
 .btn {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -117,20 +96,62 @@ header .logo-text {
     gap: 8px;
 }
 
-.btn-connect-wallet {
+/* properties for button sun */
+.btn-sun {
+    background-color: #141B22;
+    width: 48px;
+    height: 48px;
+    gap: 0;
+    border-radius: 41px 41px 41px 41px;
+}
+
+.btn-grey {
+    background-color: #141B22;
+    color: #FFFFFF;
+}
+
+.btn-green {
     background-color: #21E786;
+    color: #141B22;
+}
+
+.btn-transparent {
+    border: 2px solid #21E786;
+    color: rgb(255, 255, 255);
+    background-color: #141B22;
+}
+
+.btn-violet {
+    background-color: #5865F2;
+    color: rgb(255, 255, 255);
+
+}
+
+.btn-black {
+    background-color: rgba(13, 13, 17, 1);
+    color: rgb(248, 243, 243);
+
+}
+
+.btn-grey-x {
+    background-color: #41454A;
+    width: 102px;
+    height: 44px;
+    padding: 9px 13px 9px 20px;
+    gap: 10px;
+    color: #F7F7F7;
+}
+
+.btn-green-x {
+    background-color: transparent;
+    color: #21E786;
+    color: #F7F7F7;
 }
 
 /* Styles for index.html */
 
 /* main.page-content
 section.main-section*/
-
-.btn-whitelist {
-    border: 2px solid #21E786;
-    color: rgb(255, 255, 255);
-    background-color: #141B22;
-}
 
 .stat-number {
     font-size: 44px;
@@ -196,12 +217,6 @@ section.main-section*/
 
 .about-us-description {
     color: #C2C3C5;
-}
-
-.btn-read-more {
-    border: 2px solid #21E786;
-    color: rgb(255, 255, 255);
-    background-color: #141B22;
 }
 
 /* section.how-it-works {} */
@@ -520,21 +535,6 @@ section.main-section*/
     color: #21E786;
 }
 
-.btn-buy-open-sea {
-    background-color: #21E786;
-    color: #141B22;
-}
-
-.btn-join-discord {
-    background-color: rgba(13, 13, 17, 1);
-    color: rgb(248, 243, 243);
-}
-
-.btn-join-twitter {
-    background-color: rgba(13, 13, 17, 1);
-    color: rgb(255, 255, 255);
-}
-
 .nav-items-link-details {
     color: #21E786;
 }
@@ -688,11 +688,6 @@ section.main-section*/
     padding: 10px 20px;
 }
 
-.btn-form {
-    background: #0D0D11;
-    border: 1px solid rgba(33, 231, 134, 1);
-    color: rgba(255, 255, 255, 1);
-}
 
 /* Styles for footer */
 
@@ -708,16 +703,6 @@ footer.page-footer-main-page {
 
 .nav-link-footer {
     color: #C2C3C5;
-}
-
-.btn-whitelist-footer {
-    background-color: #21E786;
-    color: rgba(20, 27, 34, 1);
-}
-
-.btn-discord-footer {
-    background-color: rgba(88, 101, 242, 1);
-    color: rgb(255, 255, 255);
 }
 
 .join-community-text {
@@ -774,16 +759,6 @@ footer.page-footer {
     background-size: 255px 255px, 321px 321px, 137px 137px, cover, contain;
     background-repeat: no-repeat;
     height: 246px;
-}
-
-.btn-discord {
-    background-color: #5865F2;
-    color: rgb(255, 255, 255);
-}
-
-.btn-whitelist-footer {
-    background: #21E786;
-    color: #141B22;
 }
 
 .subscription-block-form input {
