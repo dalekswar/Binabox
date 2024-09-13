@@ -623,15 +623,66 @@ section.main-section*/
     text-align: left;
 }
 
-/* .faq-item p {
+.faqs {
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.faq-item summary {
     font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-} */
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .faq-item {
     background-color: rgb(20, 27, 34);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.faq-flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.faq-item summary::after {
+    content: '+';
+    font-size: 24px;
+    color: #00ff00;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    content: '-';
+    font-size: 24px;
+    color: #00ff00;
+    transform: rotate(180deg);
+}
+
+.faq-item summary:hover {
+    color: #00ff00;
+}
+
+.faq-item .faq-content {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #bbb;
+}
+
+details[open] .faq-content {
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.faq-item:hover {
+    box-shadow: 0px 0px 10px #00ff00;
 }
 
 /* Styles for catalog.html */
@@ -1047,6 +1098,28 @@ footer.page-footer-main-page {
     opacity: 0px;
     background: rgba(33, 231, 134, 1);
     color: rgba(4, 11, 17, 1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.page-footer-nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* footer for catalog.html and catalog-item.html contact-us.html*/
