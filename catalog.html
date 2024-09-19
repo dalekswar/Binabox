@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collections</title>
+    <title>Collection</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,18 +19,19 @@
     <header class="page-header">
         <div class="page-header-logo">
             <a href="index.html" class="logo">
-                <img src="./img/logo.svg" alt="Company Logo" width="36px" height="40">
+                <img src="./img/logo.svg" alt="company-logo" width="36px" height="40">
             </a>
             <span class="logo-text">BINABOX</span>
         </div>
         <nav class="page-header-nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link">HOME</a>
                     <ul class="dropdown">
                         <li class="nav-item">
-                            <a href="catalog.html" class="nav-link">Collections</a>
-                            <a href="catalog-item.html" class="nav-link">Item Detail</a>
+                            <a href="catalog.html" class="nav-link">COLLECTION</a>
+                            <a href="catalog-item.html" class="nav-link">ITEM DETAIL</a>
+                            <a href="contact-us.html" class="nav-link">CONTACT US</a>
                         </li>
                     </ul>
                 </li>
@@ -42,103 +43,193 @@
             </ul>
         </nav>
         <div class="header-buttons">
-            <button class="btn btn-sun"><img src="./img/sun.svg" alt="Sun" width="24" height="24"></button>
-            <button class="btn btn-discord-header"><img src="./img/discord.svg" alt="Discord" width="24"
-                    height="24">Discord</button>
-            <button class="btn btn-connect"><img src="./img/connect-button.svg" alt="Connect" width="24"
-                    height="24">Connect</button>
+            <button class="btn-sun" type="button"><img src="./img/sun.svg" alt="sun" width="24" height="24"></button>
+            <a class="btn btn-grey" href="https://discord.com" target="_blank">
+                <img src="./img/discord.svg" alt="Discord" width="24" height="24">
+                Discord
+            </a>
+            <a class="btn btn-green" href="#" target="_blank"><img src="./img/connect-button.svg" alt="connect"
+                    width="24" height="24">Connect</a>
         </div>
     </header>
-    <main class="page-content-catalog">
-        <section class="collections">
-            <div class="collections-container">
-                <h3 class="collections-heading">EXPLORE COLLECTIONS</h3>
-                <nav class="breadcrumbs">
-                    <a href="index.html" class="breadcrumb-link">HOME</a> |
-                    <a href="catalog.html" class="breadcrumb-link-collections">COLLECTIONS</a>
-                </nav>
-            </div>
-            <div class="collections-filter">
-                <h4 class="collections-title section-title">All Items</h4>
-                <ul class="filters">
-                    <li class="filters-item"><button class="btn btn-king">King</button></li>
-                    <li class="filters-item"><button class="btn btn-mix">Mix</button></li>
-                    <li class="filters-item"><button class="btn btn-skacura">Skacura</button></li>
-                    <li class="filters-item"><button class="btn btn-clear-all">Clear All</button></li>
-                </ul>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search NFT" class="search-input">
-                <button class="btn search-button">Search</button>
-            </div>
-        </section>
-        <section class="items-grid">
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img.jpg" alt="skirs" width="290" height="290">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img1.jpg" alt="skirs" width="290" height="290">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img2.jpg" alt="skirs" width="290" height="290">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img3.jpg" alt="skirs" width="290" height="290">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img4.jpg" alt="skirs" width="290" height="290">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img5.jpg" alt="skirs" width="290" height="290">
-                    <p class="item-title">SKISIRS #02</p>
-                </a> class="item-img"
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img6.jpg" alt="skirs" width="290" height="290">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img7.jpg" alt="skirs" width="290" height="290">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-            <article class="item">
-                <a href="catalog-item.html" class="item-link">
-                    <img src="./img/nft-collection-img8.jpg" alt="skirs" width="290" height="290">
-                    <p class="item-title">SKISIRS #02</p>
-                </a>
-            </article>
-        </section>
-    </main>
+    <div class="collections-container">
+        <h3 class="collections-heading">EXPLORE COLLECTIONS</h3>
+        <nav class="breadcrumbs">
+            <a href="index.html" class="breadcrumb-link">HOME</a> |
+            <a href="catalog.html" class="breadcrumb-link-collections">COLLECTIONS</a>
+        </nav>
+    </div>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <form action="" method="POST">
+            <aside class="sidebar">
+                <div class="filter-section">
+                    <input type="checkbox" id="toggle" class="toggle-checkbox">
+                    <label for="toggle" class="collections-title sidebar-title">CLOTHING</label>
+                    <ul class="filter-list">
+                        <li><input type="checkbox" id="combatant" name="clothing" value="combatant"> Combatant</li>
+                        <li><input type="checkbox" id="ninja" name="clothing" value="ninja"> Ninja</li>
+                        <li><input type="checkbox" id="king" name="clothing" value="king"> King</li>
+                        <li><input type="checkbox" id="queen" name="clothing" value="queen"> Queen</li>
+                        <li><input type="checkbox" id="robot" name="clothing" value="robot"> Robot</li>
+                    </ul>
+                </div>
 
+                <div class="filter-section">
+                    <input type="checkbox" id="toggle-eyes" class="toggle-checkbox">
+                    <label for="toggle-eyes" class="collections-title sidebar-title">EYES</label>
+                    <ul class="filter-list">
+                        <li><input type="checkbox" id="yellow" name="eyes" value="yellow"> Yellow</li>
+                        <li><input type="checkbox" id="green" name="eyes" value="green"> Green</li>
+                        <li><input type="checkbox" id="mix" name="eyes" value="mix"> Mix</li>
+                        <li><input type="checkbox" id="orange" name="eyes" value="orange"> Orange</li>
+                        <li><input type="checkbox" id="glow" name="eyes" value="glow"> Glow</li>
+                        <li><input type="checkbox" id="blue" name="eyes" value="blue"> Blue</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <input type="checkbox" id="toggle-face" class="toggle-checkbox">
+                    <label for="toggle-face" class="collections-title sidebar-title">FACE</label>
+                </div>
+
+                <div class="filter-section">
+                    <input type="checkbox" id="toggle-skin" class="toggle-checkbox">
+                    <label for="toggle-skin" class="collections-title sidebar-title">SKIN</label>
+                </div>
+
+                <div class="filter-section">
+                    <input type="checkbox" id="toggle-background" class="toggle-checkbox">
+                    <label for="toggle-background" class="collections-title sidebar-title">BACKGROUND</label>
+                </div>
+
+                <div class="filter-section">
+                    <input type="checkbox" id="toggle-special" class="toggle-checkbox">
+                    <label for="toggle-special" class="collections-title sidebar-title">SPECIAL</label>
+                    <ul class="filter-list">
+                        <li><input type="checkbox" id="cat" name="special" value="cat"> Cat</li>
+                        <li><input type="checkbox" id="sakura" name="special" value="sakura"> Sakura</li>
+                        <li><input type="checkbox" id="snake" name="special" value="snake"> Snake</li>
+                        <li><input type="checkbox" id="eath" name="special" value="eath"> Eath</li>
+                        <li><input type="checkbox" id="water" name="special" value="water"> Water</li>
+                    </ul>
+                </div>
+            </aside>
+        </form>
+        <!-- Main Content -->
+        <main class="page-content-catalog">
+            <section class="collections">
+                <div class="collections-filter">
+                    <h4 class="collections-title section-title">All Items</h4>
+                    <form action="" method="GET">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search NFT" class="search-input">
+                            <button class="btn search-button" type="submit"><img src="./img/icon-search.svg"
+                                    alt="icon-search"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="collections-filter-items">
+                    <ul class="filters">
+                        <li class="filters-item">
+                            <a href="#" class="btn btn-grey-x">
+                                King
+                                <img src="./img/x.svg" alt="king-icon"
+                                    style="width: 24px; height: 24px; margin-left: 8px;">
+                            </a>
+                        </li>
+                        <li class="filters-item">
+                            <a href="#" class="btn btn-grey-x">
+                                Mix
+                                <img src="./img/x.svg" alt="mix-icon"
+                                    style="width: 24px; height: 24px; margin-left: 8px;">
+                            </a>
+                        </li>
+                        <li class="filters-item">
+                            <a href="#" class="btn-grey-x">
+                                Skacura
+                                <img src="./img/x.svg" alt="skacura-icon"
+                                    style="width: 24px; height: 24px; margin-left: 8px;">
+                            </a>
+                        </li>
+                        <li class="filters-item">
+                            <a href="#" class="btn btn-green-x">
+                                Clear All
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <section class="items-grid">
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img.jpg" alt="skirs" width="290" height="290">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img1.jpg" alt="skirs" width="290" height="290">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img2.jpg" alt="skirs" width="290" height="290">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img3.jpg" alt="skirs" width="290" height="290">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img4.jpg" alt="skirs" width="290" height="290">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img5.jpg" alt="skirs" width="290" height="290">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img6.jpg" alt="skirs" width="290" height="290">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img7.jpg" alt="skirs" width="290" height="290">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="catalog-item.html" class="item-link">
+                        <img src="./img/nft-collection-img8.jpg" alt="skirs" width="290" height="290">
+                        <p class="item-title">SKISIRS #02</p>
+                    </a>
+                </article>
+            </section>
+        </main>
+    </div>
     <footer class="page-footer">
         <section class="join-community">
             <h2 class="join-community-heading section-title">JOIN OUR COMMUNITY</h2>
             <p class="join-community-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
             <div class="join-community-buttons">
-                <button class="btn btn-discord"><img src="./img/discord.svg" alt="discord" width="24"
-                        height="24">Discord</button>
-                <button class="btn btn-whitelist-footer">Whitelist Now</button>
+                <a class="btn btn-violet" href="https://discord.com" target="_blank">
+                    <img src="./img/discord.svg" alt="discord" width="24" height="24">
+                    Discord
+                </a>
+                <button type="button" class="btn btn-green">Whitelist Now</button>
             </div>
         </section>
         <div class="footer">
@@ -166,6 +257,13 @@
                     <li class="company-item">Help Center</li>
                 </ul>
             </nav>
+            <div class="subscription-block">
+                <h3 class="subscription-block-title">SUBSCRIBE</h3>
+                <form class="subscription-block-form" action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button class="btn button-submit" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
             <p class="footer-text">BINABOX 2022 - ALL rights reserved</p>
             <ul class="social-media-icons">
                 <li>

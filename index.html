@@ -13,26 +13,27 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-
-
 </head>
 
 <body>
     <header class="page-header">
         <div class="page-header-logo">
             <a href="index.html" class="logo">
-                <img src="./img/logo.svg" alt="Company Logo" width="36" height="40">
+                <img src="./img/logo.svg" alt="company-logo" width="36px" height="40">
             </a>
             <span class="logo-text">BINABOX</span>
         </div>
         <nav class="page-header-nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link">Home<img src="./img/arrow-down.svg" alt="arrow-down"
+                            class="dropdown-arrow"></a>
+
                     <ul class="dropdown">
                         <li class="nav-item">
-                            <a href="catalog.html" class="nav-link">Collections</a>
-                            <a href="catalog-item.html" class="nav-link">Item Detail</a>
+                            <a href="catalog.html" class="nav-link">Collection</a>
+                            <a href="catalog-item.html" class="nav-link">Item detail</a>
+                            <a href="contact-us.html" class="nav-link">Contact us</a>
                         </li>
                     </ul>
                 </li>
@@ -44,11 +45,13 @@
             </ul>
         </nav>
         <div class="header-buttons">
-            <button class="btn btn-sun"><img src="./img/sun.svg" alt="Sun" width="24" height="24"></button>
-            <button class="btn btn-discord-header"><img src="./img/discord.svg" alt="Discord" width="24"
-                    height="24">Discord</button>
-            <button class="btn btn-connect"><img src="./img/connect-button.svg" alt="Connect" width="24"
-                    height="24">Connect</button>
+            <button class="btn-sun" type="button"><img src="./img/sun.svg" alt="sun" width="24" height="24"></button>
+            <a class="btn btn-grey" href="https://discord.com" target="_blank">
+                <img src="./img/discord.svg" alt="discord" width="24" height="24">
+                Discord
+            </a>
+            <a class="btn btn-green" href="#" target="_blank"><img src="./img/connect-button.svg" alt="connect"
+                    width="24" height="24">Connect</a>
         </div>
     </header>
 
@@ -58,19 +61,16 @@
                 COLLECTION</h1>
             <p class="main-text">We are the best way to check the rarity of NFT collection</p>
             <dl class="stats">
-                <div class="stat-item">
-                    <dt class="stat-number">2240+</dt>
-                    <dd class="stat-label">Total Items</dd>
-                </div>
-                <div class="stat-item">
-                    <dt class="stat-number">1000+</dt>
-                    <dd class="stat-label">Profiles Whitelisted</dd>
-                </div>
-                <div class="stats-buttons">
-                    <button class="btn btn-connect-wallet">Connect Wallet</button>
-                    <button class="btn btn-whitelist">Whitelist Now</button>
-                </div>
+                <dt class="stat-number">2240+</dt>
+                <dd class="stat-label">Total Items</dd>
+
+                <dt class="stat-number">1000+</dt>
+                <dd class="stat-label">Profiles Whitelisted</dd>
             </dl>
+            <div class="stats-buttons">
+                <button class="btn btn-green" type="button">Connect Wallet</button>
+                <button class="btn btn-transparent" type="button">Whitelist Now</button>
+            </div>
             <img src="./img/image-big-cube.png" alt="main-section-img" width="970" height="846">
         </section>
 
@@ -142,7 +142,7 @@
                         industry.</p>
                 </li>
             </ol>
-            <button class="btn btn-read-more">Read More</button>
+            <button class="btn btn-transparent" type="button">Read More</button>
         </section>
 
 
@@ -150,22 +150,22 @@
             <h2 class="how-it-works-heading section-title">HOW TO <span class="color-binabox">BINABOX</span> WORK</h2>
             <ol class="steps">
                 <li class="step step-1">
-                    <img src="./img/step1.svg" alt="Step 1 Image" width="92" height="72">
+                    <img src="./img/step1.svg" alt="step-image" width="92" height="72">
                     <h3 class="step-title">STEP 1</h3>
                     <p class="step-description">Connect Your Wallet</p>
                 </li>
                 <li class="step step-2">
-                    <img src="./img/step2.svg" alt="Step 2 Image" width="92" height="72">
+                    <img src="./img/step2.svg" alt="step-image" width="92" height="72">
                     <h3 class="step-title">STEP 2</h3>
                     <p class="step-description">Select Your Quality</p>
                 </li>
                 <li class="step step-3">
-                    <img src="./img/step3.svg" alt="Step 3 Image" width="92" height="72">
+                    <img src="./img/step3.svg" alt="step-image" width="92" height="72">
                     <h3 class="step-title">STEP 3</h3>
                     <p class="step-description">Confirm The Transaction</p>
                 </li>
                 <li class="step step-4">
-                    <img src="./img/step4.svg" alt="Step 4 Image" width="92" height="72">
+                    <img src="./img/step4.svg" alt="step-image" width="92" height="72">
                     <h3 class="step-title">STEP 4</h3>
                     <p class="step-description">Receive Your NFTs</p>
                 </li>
@@ -178,36 +178,36 @@
             <div class="road-map-container">
                 <div class="images">
                     <div class="image-big-square">
-                        <img src="./img/big-image.jpg" alt="Big Image" width="470" height="470">
+                        <img src="./img/big-image.jpg" alt="big-image" width="470" height="470">
                     </div>
                     <div class="image-small-square">
-                        <img src="./img/small-image1.jpg" alt="Small Image 1" width="225" height="225">
+                        <img src="./img/small-image1.jpg" alt="small-image" width="225" height="225">
                     </div>
                     <div class="image-small-square">
-                        <img src="./img/small-image2.jpg" alt="Small Image 2" width="225" height="225">
+                        <img src="./img/small-image2.jpg" alt="small-image" width="225" height="225">
                     </div>
                 </div>
                 <h3 class="road-map-heading-phase">PHASE 1</h3>
                 <ul class="road-map-list">
                     <li class="road-map-item">
-                        <img src="./img/icon-road-map.svg" alt="Befriending & Chat Functions" width="24" height="24">
+                        <img src="./img/icon-road-map.svg" alt="befriending-chat-functions" width="24" height="24">
                         Befriending &amp; Chat Functions
                     </li>
                     <li class="road-map-item">
-                        <img src="./img/icon-road-map.svg" alt="Challenging Feature" width="24" height="24">
-                        Challenging Feature
+                        <img src="./img/icon-road-map.svg" alt="challenging-feature" width="24" height="24">
+                        Challenging &amp; Feature
                     </li>
                     <li class="road-map-item">
-                        <img src="./img/icon-road-map.svg" alt="Corsair Wheel" width="24" height="24">
-                        Corsair Wheel
+                        <img src="./img/icon-road-map.svg" alt="corsair-wheel" width="24" height="24">
+                        Corsair &amp; Wheel
                     </li>
                     <li class="road-map-item">
-                        <img src="./img/icon-road-map.svg" alt="Mobile Version Launch" width="24" height="24">
-                        Mobile Version Launch
+                        <img src="./img/icon-road-map.svg" alt="mobile-version-launch" width="24" height="24">
+                        Mobile &amp; Version Launch
                     </li>
                 </ul>
 
-                <button class="btn btn-read-more">Read More</button>
+                <button class="btn btn-transparent" type="button">Read More</button>
             </div>
             <div class="road-map-slider">
                 <ol class="slider">
@@ -222,116 +222,116 @@
         <section class="our-team">
             <h2 class="our-team-heading section-title">OUR TEAM</h2>
             <article class="our-team-member">
-                <img src="./img/profile1.png" alt="Ralph Edwards" width="120" height="120">
+                <img src="./img/profile1.png" alt="ralph-dwards" width="120" height="120">
                 <h3 class="ralph-edwards-heading">Ralph Edwards</h3>
                 <p class="our-team-post">Founder</p>
                 <div class="our-team-links">
                     <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
                     </a>
                 </div>
             </article>
             <article class="our-team-member">
-                <img src="./img/profile3.png" alt="Tony Wings" width="120" height="120">
+                <img src="./img/profile3.png" alt="tony-wings" width="120" height="120">
                 <h3 class="tony-wings-heading">Tony Wings</h3>
                 <p class="our-team-post">Web Designer</p>
                 <div class="our-team-links">
                     <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
                     </a>
                 </div>
             </article>
             <article class="our-team-member">
-                <img src="./img/profile4.png" alt="Esther Howard" width="120" height="120">
+                <img src="./img/profile4.png" alt="esther-howard" width="120" height="120">
                 <h3 class="esther-howard-heading">Esther Howard</h3>
                 <p class="our-team-post">Project Manager</p>
                 <div class="our-team-links">
                     <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
                     </a>
                 </div>
             </article>
             <article class="our-team-member">
-                <img src="./img/profile5.png" alt="Jenny Wilson" width="120" height="120">
+                <img src="./img/profile5.png" alt="jenny-wilson" width="120" height="120">
                 <h3 class="jenny-wilson-heading">Jenny Wilson</h3>
                 <p class="our-team-post">Artist</p>
                 <div class="our-team-links">
                     <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
                     </a>
                 </div>
             </article>
             <article class="our-team-member">
-                <img src="./img/profile6.png" alt="Robert Fox" width="120" height="120">
+                <img src="./img/profile6.png" alt="robert-fox" width="120" height="120">
                 <h3 class="robert-fox-heading">Robert Fox</h3>
                 <p class="our-team-post">UI/UX Designer</p>
                 <div class="our-team-links">
                     <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
                     </a>
                 </div>
             </article>
             <article class="our-team-member">
-                <img src="./img/profile7.png" alt="Devon Lane" width="120" height="120">
+                <img src="./img/profile7.png" alt="devon-lane" width="120" height="120">
                 <h3 class="devon-lane-heading">Devon Lane</h3>
                 <p class="our-team-post">Ux Architect</p>
                 <div class="our-team-links">
                     <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
                     </a>
                     <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
                     </a>
                 </div>
             </article>
@@ -390,8 +390,18 @@
             <p class="join-community-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
             <div class="join-community-buttons">
-                <button class="btn btn-discord-footer">Discord</button>
-                <button class="btn btn-whitelist-footer">Whitelist Now</button>
+                <a class="btn btn-violet" href="https://discord.com" target="_blank">
+                    <img src="./img/discord.svg" alt="discord" width="24" height="24">
+                    Discord
+                </a>
+
+                <button class="btn btn-green" type="button">Whitelist Now</button>
+            </div>
+            <div class="subscription-block-main-footer">
+                <form class="form-main-footer" action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button class="btn btn-green" type="submit">SUBSCRIBE</button>
+                </form>
             </div>
             <div class="icon-container">
                 <a href="#" class="join-community-link"><img src="./img/twitter.svg" alt="Twitter" width="22"
@@ -412,7 +422,7 @@
         <div class="footer">
             <div class="page-footer-logo">
                 <a href="index.html" class="logo">
-                    <img src="./img/logo.svg" alt="Company Logo" width="24" height="27">
+                    <img src="./img/logo.svg" alt="company-logo" width="24" height="27">
                 </a>
                 <span class="logo-text">BINABOX</span>
             </div>

@@ -60,24 +60,6 @@ header .logo-text {
     line-height: 42px;
 }
 
-/* color for button discord */
-.btn-discord-header {
-    background-color: #141B22;
-    color: #FFFFFF;
-    line-height: 24px;
-}
-
-/* color for button connect */
-.btn-connect {
-    background-color: #21E786;
-
-}
-
-/* color for button sun */
-.btn-sun {
-    background-color: #141B22;
-}
-
 /* Navigation styles for index.html catalog.html and catalog-item.html */
 /* nav.pageheader-nav {} */
 
@@ -86,9 +68,10 @@ header .logo-text {
     color: rgb(143, 99, 156);
 } */
 
-/* color for all links .nav-link (index, catalog, catalog-item) */
+/* properties for all links (index, catalog, catalog-item, contact-us) */
 .nav-link {
     color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
 
 .main-text {
@@ -102,28 +85,71 @@ header .logo-text {
 /* Styles for all buttons */
 
 .btn {
-    font-family: 'Bakbak One';
+    font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    width: 154px;
+    height: 56px;
+    padding: 12px 24px;
+    gap: 8px;
 }
 
-.btn-connect-wallet {
+/* properties for button sun */
+.btn-sun {
+    background-color: #141B22;
+    width: 48px;
+    height: 48px;
+    gap: 0;
+    border-radius: 41px 41px 41px 41px;
+}
+
+.btn-grey {
+    background-color: #141B22;
+    color: #FFFFFF;
+}
+
+.btn-green {
     background-color: #21E786;
-    ;
+    color: #141B22;
+}
+
+.btn-transparent {
+    border: 2px solid #21E786;
+    color: rgb(255, 255, 255);
+    background-color: #141B22;
+}
+
+.btn-violet {
+    background-color: #5865F2;
+    color: rgb(255, 255, 255);
+
+}
+
+.btn-black {
+    background-color: rgba(13, 13, 17, 1);
+    color: rgb(248, 243, 243);
+
+}
+
+.btn-grey-x {
+    background-color: #41454A;
+    width: 102px;
+    height: 44px;
+    padding: 9px 13px 9px 20px;
+    gap: 10px;
+    color: #F7F7F7;
+}
+
+.btn-green-x {
+    color: #21E786;
 }
 
 /* Styles for index.html */
 
 /* main.page-content
 section.main-section*/
-
-.btn-whitelist {
-    border: 2px solid #21E786;
-    color: rgb(255, 255, 255);
-    background-color: #141B22;
-}
 
 .stat-number {
     font-size: 44px;
@@ -189,12 +215,6 @@ section.main-section*/
 
 .about-us-description {
     color: #C2C3C5;
-}
-
-.btn-read-more {
-    border: 2px solid #21E786;
-    color: rgb(255, 255, 255);
-    background-color: #141B22;
 }
 
 /* section.how-it-works {} */
@@ -276,14 +296,6 @@ section.main-section*/
 
 }
 
-.our-team-member p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: center;
-
-}
-
 .our-team-post {
     color: #C2C3C5;
 }
@@ -331,12 +343,6 @@ section.main-section*/
     text-align: left;
 }
 
-.faq-item p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-}
 
 .faq-item {
     background-color: rgb(20, 27, 34);
@@ -345,6 +351,64 @@ section.main-section*/
 /* Styles for catalog.html */
 /* main.page-content-catalog {}
 */
+/* styles.css */
+.collections-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.collections-filter-items .filters-item {
+    display: inline-block;
+}
+
+.filter-section {
+    position: relative;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.collections-title {
+    cursor: pointer;
+}
+
+.filter-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-list li {
+    margin: 5px 0;
+}
+
+.toggle-checkbox:checked~.filter-list {
+    display: block;
+}
+
+.container {
+    display: flex;
+    width: 1410px;
+    min-height: 1378px;
+    gap: 0;
+    margin: 100px;
+}
+
+.sidebar {
+    width: 280px;
+    min-height: 970px;
+    gap: 0;
+    margin: 0px 80px 0px 0px;
+}
+
+.filter-section {
+    background-color: #141B22;
+}
+
 .collections-container {
     background-color: rgb(20, 27, 34);
 }
@@ -388,13 +452,13 @@ section.main-section*/
 
 /* section.items-grid {} */
 
-.item p {
+/* .item p {
     font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
-}
+} */
 
 /* Styles for catalog-item.html */
 /* main.page-content-catalog-item {}
@@ -402,12 +466,12 @@ section.main-section*/
 
 .exploration-image {
     width: 290px;
-    height: 290px;
+    min-height: 290px;
 }
 
 .arrow-img {
     width: 26px;
-    height: 14px;
+    min-height: 14px;
 }
 
 .items-container {
@@ -429,6 +493,11 @@ section.main-section*/
 }
 
 /* section.items {} */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .items-text {
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 20px;
@@ -448,21 +517,6 @@ section.main-section*/
 
 .item-price-number {
     color: #21E786;
-}
-
-.btn-buy-open-sea {
-    background-color: #21E786;
-    color: #141B22;
-}
-
-.btn-join-discord {
-    background-color: rgba(13, 13, 17, 1);
-    color: rgb(248, 243, 243);
-}
-
-.btn-join-twitter {
-    background-color: rgba(13, 13, 17, 1);
-    color: rgb(255, 255, 255);
 }
 
 .nav-items-link-details {
@@ -517,6 +571,108 @@ section.main-section*/
     text-align: left;
 }
 
+.sidebar-title {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(20, 27, 34, 1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 280px;
+    min-height: 48px;
+    top: 4px;
+    left: 1130px;
+    gap: 0;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    color: rgba(136, 139, 142, 1);
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-input::placeholder {
+    color: #666;
+    /* Placeholder color */
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px 0px 0px 240px; */
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    left: 1370px;
+    gap: 0;
+}
+
+/* styles for contact-us.html */
+.form {
+    text-align: center;
+    width: 690px;
+    height: 536px;
+}
+
+.form-heading,
+.form-paragraph {
+    margin: 0 auto 16px auto;
+    max-width: 100%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-grid input,
+.form-grid textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(194, 195, 197, 0.15);
+    color: #C2C3C5;
+
+}
+
+.form-grid input[type="tel"] {
+    grid-column: 1 / 3;
+    /* Make the phone number input span across two columns */
+}
+
+.form-grid textarea {
+    grid-column: 1 / 3;
+    resize: vertical;
+    height: 100px;
+}
+
+.form-grid button {
+    grid-column: 1 / 3;
+    justify-self: center;
+    padding: 10px 20px;
+}
+
+
 /* Styles for footer */
 
 /* footer index.html */
@@ -533,28 +689,36 @@ footer.page-footer-main-page {
     color: #C2C3C5;
 }
 
-.btn-whitelist-footer {
-    background-color: #21E786;
-    color: rgba(20, 27, 34, 1);
-}
-
-.btn-discord-footer {
-    background-color: rgba(88, 101, 242, 1);
-    color: rgb(255, 255, 255);
-}
-
 .join-community-text {
     color: #C2C3C5
 }
 
-.footer-icon-img {
-    width: 22px;
-    height: 19px;
+
+.subscription-block-main-footer input {
+    width: 690px;
+    height: 56px;
+    opacity: 0.15;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(194, 195, 197, 1);
 }
 
-/* footer for catalog.html and catalog-item.html */
+.button-subscribe {
+    width: 154px;
+    height: 56px;
+    padding: 12px 24px 12px 24px;
+    gap: 8px;
+    background: rgba(33, 231, 134, 1);
+    color: rgba(4, 11, 17, 1);
+}
+
+/* footer for catalog.html and catalog-item.html contact-us.html*/
+
 footer.page-footer {
-    background-color: #333;
+    background-color: rgba(20, 27, 34, 1);
     color: #fff;
     padding: 20px;
 
@@ -578,17 +742,25 @@ footer.page-footer {
     background-position: top left, bottom right, top 0px left 280px;
     background-size: 255px 255px, 321px 321px, 137px 137px, cover, contain;
     background-repeat: no-repeat;
-    height: 246px;
+    min-height: 246px;
 }
 
-.btn-discord {
-    background-color: #5865F2;
-    color: rgb(255, 255, 255);
+.subscription-block-form input {
+    width: 287px;
+    height: 56px;
+    padding: 14px 24px;
+    gap: 10px;
+    background-color: rgba(20, 27, 34, 1);
+    color: rgba(194, 195, 197, 1);
 }
 
-.btn-whitelist-footer {
-    background: #21E786;
-    color: #141B22;
+.button-submit {
+    width: 154px;
+    height: 56px;
+    padding: 12px 24px;
+    gap: 8px;
+    background: rgba(33, 231, 134, 1);
+    color: rgba(4, 11, 17, 1);
 }
 
 footer .logo-text {
