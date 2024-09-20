@@ -43,7 +43,7 @@ ul {
 }
 
 /* Styles for header for index, catalog, catalog-item contact-us*/
-header.page-header {
+.page-header {
     background-color: #040B11;
     font-family: 'Bakbak One', Arial, sans-serif;
     text-decoration: none;
@@ -51,7 +51,6 @@ header.page-header {
     line-height: 24px;
     letter-spacing: 10%;
     width: 100%;
-    height: 100%;
     padding: 0 100px;
 }
 
@@ -75,6 +74,8 @@ header.page-header {
 .nav-list {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
@@ -133,8 +134,7 @@ header .logo-text {
     width: 48px;
     height: 48px;
     gap: 0px;
-    border-radius: 41px 41px 41px 41px;
-    opacity: 0px;
+    border-radius: 50%;
 }
 
 /* Navigation styles for index.html catalog.html and catalog-item.html */
@@ -151,6 +151,7 @@ header .logo-text {
     text-decoration: none;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .main-text {
@@ -172,8 +173,7 @@ header .logo-text {
     text-align: center;
     width: 154px;
     height: 56px;
-    padding: 12px, 24px, 12px, 24px;
-    gap: 8px;
+    /* padding: 12px, 24px, 12px, 24px; */
 }
 
 .btn-connect-wallet {
@@ -270,7 +270,6 @@ section.main-section*/
     padding: 30px;
     border-radius: 8px;
     position: relative;
-    transition: all 0.3s ease;
     overflow: hidden;
     z-index: 1;
 }
@@ -282,11 +281,8 @@ section.main-section*/
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-    font-size: 24px;
     margin-bottom: 10px;
     margin-left: 20px;
-    z-index: 1;
-    position: relative;
     margin-top: 30px;
 }
 
@@ -294,7 +290,6 @@ section.main-section*/
     font-size: 16px;
     color: #aaa;
     margin-left: 20px;
-    z-index: 1;
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -449,13 +444,7 @@ section.main-section*/
 .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
     gap: 20px;
-}
-
-.image-big-square {
-    grid-column: 1 / span 1;
-    grid-row: span 2;
 }
 
 .image-small-square-container {
@@ -738,7 +727,6 @@ details[open] .faq-content {
     top: 450px;
     left: 255px;
     gap: 0px;
-    opacity: 0px;
     margin: 100px;
 }
 
@@ -746,7 +734,6 @@ details[open] .faq-content {
     width: 280px;
     height: 970px;
     gap: 0px;
-    opacity: 0px;
     margin: 0px 80px 0px 0px;
 }
 
@@ -760,6 +747,10 @@ details[open] .faq-content {
 
 .item {
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+.breadcrumbs {
+    text-transform: uppercase;
 }
 
 /* color for all links in the page catalog*/
@@ -824,6 +815,9 @@ details[open] .faq-content {
 }
 
 /* color for all links in the page catalog-item*/
+.nav-items {
+    text-transform: uppercase;
+}
 
 .nav-items-link {
     color: rgb(255, 255, 255);
@@ -951,7 +945,6 @@ details[open] .faq-content {
     top: 4px;
     left: 1130px;
     gap: 0px;
-    opacity: 0px;
 
 }
 
@@ -986,7 +979,6 @@ details[open] .faq-content {
     top: 17px;
     left: 1370px;
     gap: 0px;
-    opacity: 0px;
 }
 
 /* styles for contact-us.html */
@@ -1078,7 +1070,6 @@ footer.page-footer-main-page {
     top: 220px;
     left: 614px;
     gap: 0px;
-    opacity: 0px;
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
@@ -1095,7 +1086,6 @@ footer.page-footer-main-page {
     left: 1150px;
     padding: 12px 24px 12px 24px;
     gap: 8px;
-    opacity: 0px;
     background: rgba(33, 231, 134, 1);
     color: rgba(4, 11, 17, 1);
 }
@@ -1113,13 +1103,6 @@ footer.page-footer-main-page {
 
 .page-footer-nav {
     display: flex;
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* footer for catalog.html and catalog-item.html contact-us.html*/
