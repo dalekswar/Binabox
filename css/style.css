@@ -133,7 +133,6 @@ header .logo-text {
     background-color: #141B22;
     width: 48px;
     height: 48px;
-    gap: 0px;
     border-radius: 50%;
 }
 
@@ -517,7 +516,7 @@ section.main-section*/
 
 /* section.our-team {} */
 
-.our-team-flexbox {
+.our-team-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -634,7 +633,7 @@ section.main-section*/
     transition: all 0.3s ease;
 }
 
-.faq-flexbox {
+.faq-container {
     display: flex;
     flex-direction: column;
 }
@@ -643,7 +642,7 @@ section.main-section*/
 .faq-item summary::after {
     content: '+';
     font-size: 24px;
-    color: #00ff00;
+    color: #21E786;
     margin-left: auto;
     transition: transform 0.3s ease;
 }
@@ -651,12 +650,12 @@ section.main-section*/
 .faq-item[open] summary::after {
     content: '-';
     font-size: 24px;
-    color: #00ff00;
+    color: #21E786;
     transform: rotate(180deg);
 }
 
 .faq-item summary:hover {
-    color: #00ff00;
+    color: #21E786;
 }
 
 .faq-item .faq-content {
@@ -670,9 +669,9 @@ details[open] .faq-content {
     border-top: 1px solid #444;
 }
 
-.faq-item:hover {
+/* .faq-item:hover {
     box-shadow: 0px 0px 10px #00ff00;
-}
+} */
 
 /* Styles for catalog.html */
 /* main.page-content-catalog {}
@@ -695,17 +694,14 @@ details[open] .faq-content {
 
 .toggle-checkbox {
     display: none;
-    /* Скрываем чекбокс */
 }
 
 .collections-title {
     cursor: pointer;
-    /* Меняем курсор при наведении на заголовок */
 }
 
 .filter-list {
     display: none;
-    /* Скрываем список по умолчанию */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -715,7 +711,6 @@ details[open] .faq-content {
     margin: 5px 0;
 }
 
-/* Показываем список, когда чекбокс отмечен */
 .toggle-checkbox:checked~.filter-list {
     display: block;
 }
@@ -726,14 +721,12 @@ details[open] .faq-content {
     height: 1378px;
     top: 450px;
     left: 255px;
-    gap: 0px;
     margin: 100px;
 }
 
 .sidebar {
     width: 280px;
     height: 970px;
-    gap: 0px;
     margin: 0px 80px 0px 0px;
 }
 
@@ -832,7 +825,7 @@ details[open] .faq-content {
 }
 
 /* section.items {} */
-.items-grid {
+.items-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -944,7 +937,6 @@ details[open] .faq-content {
     height: 48px;
     top: 4px;
     left: 1130px;
-    gap: 0px;
 
 }
 
@@ -978,7 +970,6 @@ details[open] .faq-content {
     height: 20px;
     top: 17px;
     left: 1370px;
-    gap: 0px;
 }
 
 /* styles for contact-us.html */
@@ -1069,7 +1060,6 @@ footer.page-footer-main-page {
     height: 56px;
     top: 220px;
     left: 614px;
-    gap: 0px;
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
