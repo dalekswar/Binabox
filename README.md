@@ -8,6 +8,8 @@ Catalog - done
 
 Catalog-item - done
 
+Contact-us - done
+
 other pages will be here ^^
 
 ## CSS
@@ -16,5 +18,7 @@ Homepage - done
 Catalog - ?
 
 Catalog-item - ?
+
+Contact-us - ?
 
 other pages will be here ^^
