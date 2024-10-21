@@ -28,13 +28,10 @@
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home<img src="./img/arrow-down.svg" alt="arrow-down"
                             class="dropdown-arrow"></a>
-
                     <ul class="dropdown">
-                        <li class="nav-item">
-                            <a href="catalog.html" class="nav-link">Collection</a>
-                            <a href="catalog-item.html" class="nav-link">Item detail</a>
-                            <a href="contact-us.html" class="nav-link">Contact us</a>
-                        </li>
+                        <li class="nav-item"><a href="catalog.html" class="nav-link">Collection</a></li>
+                        <li class="nav-item"><a href="catalog-item.html" class="nav-link">Item Detail</a></li>
+                        <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
@@ -57,20 +54,26 @@
 
     <main class="page-content">
         <section class="main-section">
-            <h1 class="main-heading">WITH <span class="color-binabox">BINABOX</span> EXPLORE NFT
-                COLLECTION</h1>
-            <p class="main-text">We are the best way to check the rarity of NFT collection</p>
-            <dl class="stats">
-                <dt class="stat-number">2240+</dt>
-                <dd class="stat-label">Total Items</dd>
-
-                <dt class="stat-number">1000+</dt>
-                <dd class="stat-label">Profiles Whitelisted</dd>
-            </dl>
-            <div class="stats-buttons">
-                <button class="btn btn-green" type="button">Connect Wallet</button>
-                <button class="btn btn-transparent" type="button">Whitelist Now</button>
+            <div class="main-content">
+                <h1 class="main-heading">WITH <span class="color-binabox">BINABOX</span> EXPLORE NFT
+                    COLLECTION</h1>
+                <p class="main-text">We are the best way to check the rarity of NFT collection</p>
+                <dl class="stats">
+                    <div class="stat-item">
+                        <dt class="stat-number">2240+</dt>
+                        <dd class="stat-label">Total Items</dd>
+                    </div>
+                    <div class="stat-item">
+                        <dt class="stat-number">1000+</dt>
+                        <dd class="stat-label">Profiles Whitelisted</dd>
+                    </div>
+                </dl>
+                <div class="stats-buttons">
+                    <button class="btn btn-connect-wallet" type="button">Connect Wallet</button>
+                    <button class="btn btn-whitelist" type="button">Whitelist Now</button>
+                </div>
             </div>
+
             <img src="./img/image-big-cube.png" alt="main-section-img" width="970" height="846">
         </section>
 
@@ -105,6 +108,12 @@
                     <p class="nft-item">SKISIRS #02</p>
                 </a>
             </article>
+            <article class="nft-collection-item">
+                <a class="nft-collection-link" href="catalog-item.html">
+                    <img src="./img/nft-collection-img5.jpg" alt="nft-collection-img" width="290" height="290">
+                    <p class="nft-item">SKISIRS #02</p>
+                </a>
+            </article>
 
         </section>
 
@@ -122,22 +131,26 @@
 
             <ol class="about-us-features">
                 <li class="feature feature-high-quality">
-                    <h3 class="feature-title">01 HIGH QUALITY</h3>
+                    <span class="feature-number">01</span>
+                    <h3 class="feature-title">HIGH QUALITY</h3>
                     <p class="feature-description">Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry.</p>
                 </li>
                 <li class="feature feature-big-collection">
-                    <h3 class="feature-title">02 BIG COLLECTION</h3>
+                    <span class="feature-number">02</span>
+                    <h3 class="feature-title">BIG COLLECTION</h3>
                     <p class="feature-description">Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry.</p>
                 </li>
                 <li class="feature feature-top-resource">
-                    <h3 class="feature-title">03 TOP RESOURCE</h3>
+                    <span class="feature-number">03</span>
+                    <h3 class="feature-title">TOP RESOURCE</h3>
                     <p class="feature-description">Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry.</p>
                 </li>
                 <li class="feature feature-big-community">
-                    <h3 class="feature-title">04 BIG COMMUNITY</h3>
+                    <span class="feature-number">04</span>
+                    <h3 class="feature-title">BIG COMMUNITY</h3>
                     <p class="feature-description">Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry.</p>
                 </li>
@@ -180,34 +193,38 @@
                     <div class="image-big-square">
                         <img src="./img/big-image.jpg" alt="big-image" width="470" height="470">
                     </div>
-                    <div class="image-small-square">
-                        <img src="./img/small-image1.jpg" alt="small-image" width="225" height="225">
-                    </div>
-                    <div class="image-small-square">
-                        <img src="./img/small-image2.jpg" alt="small-image" width="225" height="225">
+                    <div class="image-small-square-container">
+                        <div class="image-small-square">
+                            <img src="./img/small-image1.jpg" alt="Small Image 1" width="225" height="225">
+                        </div>
+                        <div class="image-small-square">
+                            <img src="./img/small-image2.jpg" alt="Small Image 2" width="225" height="225">
+                        </div>
                     </div>
                 </div>
-                <h3 class="road-map-heading-phase">PHASE 1</h3>
-                <ul class="road-map-list">
-                    <li class="road-map-item">
-                        <img src="./img/icon-road-map.svg" alt="befriending-chat-functions" width="24" height="24">
-                        Befriending &amp; Chat Functions
-                    </li>
-                    <li class="road-map-item">
-                        <img src="./img/icon-road-map.svg" alt="challenging-feature" width="24" height="24">
-                        Challenging &amp; Feature
-                    </li>
-                    <li class="road-map-item">
-                        <img src="./img/icon-road-map.svg" alt="corsair-wheel" width="24" height="24">
-                        Corsair &amp; Wheel
-                    </li>
-                    <li class="road-map-item">
-                        <img src="./img/icon-road-map.svg" alt="mobile-version-launch" width="24" height="24">
-                        Mobile &amp; Version Launch
-                    </li>
-                </ul>
-
-                <button class="btn btn-transparent" type="button">Read More</button>
+                <div class="road-map-text">
+                    <h3 class="road-map-heading-phase">PHASE 1</h3>
+                    <ul class="road-map-list">
+                        <li class="road-map-item">
+                            <img src="./img/icon-road-map.svg" alt="Befriending & Chat Functions" width="24"
+                                height="24">
+                            Befriending &amp; Chat Functions
+                        </li>
+                        <li class="road-map-item">
+                            <img src="./img/icon-road-map.svg" alt="Challenging Feature" width="24" height="24">
+                            Challenging Feature
+                        </li>
+                        <li class="road-map-item">
+                            <img src="./img/icon-road-map.svg" alt="Corsair Wheel" width="24" height="24">
+                            Corsair Wheel
+                        </li>
+                        <li class="road-map-item">
+                            <img src="./img/icon-road-map.svg" alt="Mobile Version Launch" width="24" height="24">
+                            Mobile Version Launch
+                        </li>
+                    </ul>
+                    <button class="btn btn-read-more" type="button">Read More</button>
+                </div>
             </div>
             <div class="road-map-slider">
                 <ol class="slider">
@@ -221,120 +238,122 @@
 
         <section class="our-team">
             <h2 class="our-team-heading section-title">OUR TEAM</h2>
-            <article class="our-team-member">
-                <img src="./img/profile1.png" alt="ralph-dwards" width="120" height="120">
-                <h3 class="ralph-edwards-heading">Ralph Edwards</h3>
-                <p class="our-team-post">Founder</p>
-                <div class="our-team-links">
-                    <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
-                    </a>
-                </div>
-            </article>
-            <article class="our-team-member">
-                <img src="./img/profile3.png" alt="tony-wings" width="120" height="120">
-                <h3 class="tony-wings-heading">Tony Wings</h3>
-                <p class="our-team-post">Web Designer</p>
-                <div class="our-team-links">
-                    <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
-                    </a>
-                </div>
-            </article>
-            <article class="our-team-member">
-                <img src="./img/profile4.png" alt="esther-howard" width="120" height="120">
-                <h3 class="esther-howard-heading">Esther Howard</h3>
-                <p class="our-team-post">Project Manager</p>
-                <div class="our-team-links">
-                    <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
-                    </a>
-                </div>
-            </article>
-            <article class="our-team-member">
-                <img src="./img/profile5.png" alt="jenny-wilson" width="120" height="120">
-                <h3 class="jenny-wilson-heading">Jenny Wilson</h3>
-                <p class="our-team-post">Artist</p>
-                <div class="our-team-links">
-                    <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
-                    </a>
-                </div>
-            </article>
-            <article class="our-team-member">
-                <img src="./img/profile6.png" alt="robert-fox" width="120" height="120">
-                <h3 class="robert-fox-heading">Robert Fox</h3>
-                <p class="our-team-post">UI/UX Designer</p>
-                <div class="our-team-links">
-                    <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
-                    </a>
-                </div>
-            </article>
-            <article class="our-team-member">
-                <img src="./img/profile7.png" alt="devon-lane" width="120" height="120">
-                <h3 class="devon-lane-heading">Devon Lane</h3>
-                <p class="our-team-post">Ux Architect</p>
-                <div class="our-team-links">
-                    <a href="#" class="our-team-linkedin">
-                        <img src="./img/linkedIn.svg" alt="linkedIn" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-facebook">
-                        <img src="./img/facebook.svg" alt="facebook" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-instagram">
-                        <img src="./img/instagram.svg" alt="instagram" width="20" height="20">
-                    </a>
-                    <a href="#" class="our-team-telegram">
-                        <img src="./img/telegram.svg" alt="telegram" width="20" height="20">
-                    </a>
-                </div>
-            </article>
+            <div class="our-team-container">
+                <article class="our-team-member">
+                    <img src="./img/profile1.png" alt="profile" width="120" height="120">
+                    <h3 class="ralph-edwards-heading">Ralph Edwards</h3>
+                    <p class="our-team-post">Founder</p>
+                    <div class="our-team-links">
+                        <a href="#" class="our-team-linkedin">
+                            <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-facebook">
+                            <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-instagram">
+                            <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-telegram">
+                            <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        </a>
+                    </div>
+                </article>
+                <article class="our-team-member">
+                    <img src="./img/profile3.png" alt="profile" width="120" height="120">
+                    <h3 class="tony-wings-heading">Tony Wings</h3>
+                    <p class="our-team-post">Web Designer</p>
+                    <div class="our-team-links">
+                        <a href="#" class="our-team-linkedin">
+                            <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-facebook">
+                            <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-instagram">
+                            <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-telegram">
+                            <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        </a>
+                    </div>
+                </article>
+                <article class="our-team-member">
+                    <img src="./img/profile4.png" alt="profile" width="120" height="120">
+                    <h3 class="esther-howard-heading">Esther Howard</h3>
+                    <p class="our-team-post">Project Manager</p>
+                    <div class="our-team-links">
+                        <a href="#" class="our-team-linkedin">
+                            <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-facebook">
+                            <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-instagram">
+                            <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-telegram">
+                            <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        </a>
+                    </div>
+                </article>
+                <article class="our-team-member">
+                    <img src="./img/profile5.png" alt="profile" width="120" height="120">
+                    <h3 class="jenny-wilson-heading">Jenny Wilson</h3>
+                    <p class="our-team-post">Artist</p>
+                    <div class="our-team-links">
+                        <a href="#" class="our-team-linkedin">
+                            <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-facebook">
+                            <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-instagram">
+                            <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-telegram">
+                            <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        </a>
+                    </div>
+                </article>
+                <article class="our-team-member">
+                    <img src="./img/profile6.png" alt="profile" width="120" height="120">
+                    <h3 class="robert-fox-heading">Robert Fox</h3>
+                    <p class="our-team-post">UI/UX Designer</p>
+                    <div class="our-team-links">
+                        <a href="#" class="our-team-linkedin">
+                            <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-facebook">
+                            <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-instagram">
+                            <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-telegram">
+                            <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        </a>
+                    </div>
+                </article>
+                <article class="our-team-member">
+                    <img src="./img/profile7.png" alt="profile" width="120" height="120">
+                    <h3 class="devon-lane-heading">Devon Lane</h3>
+                    <p class="our-team-post">Ux Architect</p>
+                    <div class="our-team-links">
+                        <a href="#" class="our-team-linkedin">
+                            <img src="./img/linkedIn.svg" alt="LinkedIn" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-facebook">
+                            <img src="./img/facebook.svg" alt="Facebook" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-instagram">
+                            <img src="./img/instagram.svg" alt="Instagram" width="20" height="20">
+                        </a>
+                        <a href="#" class="our-team-telegram">
+                            <img src="./img/telegram.svg" alt="Telegram" width="20" height="20">
+                        </a>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section class="partners">
@@ -363,24 +382,27 @@
 
         <section class="faqs">
             <h2 class="faqs-heading section-title">FAQs</h2>
-            <details class="faq-item">
-                <summary class="faq-item-heading">What Are The NFTs?</summary>
-                <p class="faq-content">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus
-                    urna volutpat venenatis, risus faucibus.</p>
-            </details>
-            <details class="faq-item">
-                <summary class="faq-item-heading">How Do I Get NFTs?</summary>
-                <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </details>
-            <details class="faq-item">
-                <summary class="faq-item-heading">How Can We Buy Your NFTs?</summary>
-                <p class="faq-content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </details>
-            <details class="faq-item">
-                <summary class="faq-item-heading">Who Are The Team Behind The Project?</summary>
-                <p class="faq-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-            </details>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-item-heading">What Are The NFTs?</summary>
+                    <p class="faq-content">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla
+                        dapibus
+                        urna volutpat venenatis, risus faucibus.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item-heading">How Do I Get NFTs?</summary>
+                    <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item-heading">How Can We Buy Your NFTs?</summary>
+                    <p class="faq-content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item-heading">Who Are The Team Behind The Project?</summary>
+                    <p class="faq-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.</p>
+                </details>
+            </div>
         </section>
     </main>
 
@@ -428,7 +450,7 @@
             </div>
             <p class="page-footer-text">BINABOX 2022 - ALL rights reserved</p>
             <nav class="page-footer-nav">
-                <ul>
+                <ul class="nav-list">
                     <li class="nav-item"><a href="index.html" class="nav-link-footer">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link-footer">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link-footer">Roadmap</a></li>

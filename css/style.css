@@ -10,6 +10,9 @@ body {
     line-height: 22px;
     color: #FFFFFF;
     background-color: #0D0D11;
+    /* max-width: 1410px;
+    padding-left: 15px;
+    padding-right: 15px; */
 }
 
 /* delete dots in ul*/
@@ -38,15 +41,71 @@ ul {
     color: #21E786;
 }
 
-/* Styles for header for index, catalog, catalog-item*/
-header.page-header {
+.main-content {
+    padding: 0 100px;
+}
+
+/* Styles for header for index, catalog, catalog-item contact-us*/
+.page-header {
     background-color: #040B11;
     font-family: 'Bakbak One', Arial, sans-serif;
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 10%;
+    width: 100%;
+    padding: 0 100px;
 }
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 32px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown .nav-link {
+    display: block;
+    white-space: nowrap;
+}
+
 
 /* Remove underline from the logo link */
 
@@ -59,7 +118,25 @@ header .logo-text {
     font-size: 32px;
     line-height: 42px;
 }
+/* color for button discord */
+.btn-discord-header {
+    background-color: #141B22;
+    color: #FFFFFF;
+    line-height: 24px;
+}
 
+/* color for button connect */
+.btn-connect {
+    background-color: #21E786;
+}
+
+/* color for button sun */
+.btn-sun {
+    background-color: #141B22;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
 /* Navigation styles for index.html catalog.html and catalog-item.html */
 /* nav.pageheader-nav {} */
 
@@ -71,6 +148,9 @@ header .logo-text {
 /* properties for all links (index, catalog, catalog-item, contact-us) */
 .nav-link {
     color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
 }
 
@@ -85,15 +165,15 @@ header .logo-text {
 /* Styles for all buttons */
 
 .btn {
+    gap: 8px;
     font-family: 'Bakbak One', Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    text-align: left;
+    text-align: center;
     width: 154px;
     height: 56px;
-    padding: 12px 24px;
-    gap: 8px;
+    /* padding: 12px, 24px, 12px, 24px; */
 }
 
 /* properties for button sun */
@@ -110,6 +190,12 @@ header .logo-text {
     color: #FFFFFF;
 }
 
+
+/* main.page-content
+section.main-section*/
+.main-section {
+    display: flex;
+}
 .btn-green {
     background-color: #21E786;
     color: #141B22;
@@ -119,6 +205,16 @@ header .logo-text {
     border: 2px solid #21E786;
     color: rgb(255, 255, 255);
     background-color: #141B22;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-item {
+    text-align: center;
 }
 
 .btn-violet {
@@ -150,7 +246,6 @@ header .logo-text {
 
 /* main.page-content
 section.main-section*/
-
 .stat-number {
     font-size: 44px;
     font-weight: 400;
@@ -164,9 +259,15 @@ section.main-section*/
     line-height: 26px;
     text-align: left;
     color: #C2C3C5;
+    margin-top: 10px;
 }
 
 /* Styles section.nft-collection */
+.nft-collection {
+    display: flex;
+
+}
+
 .nft-collection-item {
     background-color: rgba(255, 255, 255, 0.05);
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -174,6 +275,7 @@ section.main-section*/
     font-weight: 400;
     line-height: 28px;
     text-align: left;
+    margin-right: 30px;
 }
 
 /* color for links */
@@ -189,12 +291,31 @@ section.main-section*/
     font-weight: 400;
     line-height: 28px;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
 }
 
 .feature {
     background-color: #222;
     color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
+
 
 .feature-title {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -202,9 +323,15 @@ section.main-section*/
     font-weight: 400;
     line-height: 30px;
     text-align: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 .feature-description {
+    font-size: 16px;
+    color: #aaa;
+    margin-left: 20px;
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -213,11 +340,51 @@ section.main-section*/
     color: #C2C3C5;
 }
 
+.feature-number {
+    font-size: 72px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px #21E786;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 0;
+}
+
 .about-us-description {
     color: #C2C3C5;
 }
 
+.btn-read-more {
+    border: 2px solid #21E786;
+    color: rgb(255, 255, 255);
+    background-color: #141B22;
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #21E786;
+}
+
+.btn-read-more:hover {
+    background-color: #00cc66;
+}
 /* section.how-it-works {} */
+
+.how-it-works {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.how-it-works-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
 .step-img {
     width: 92px;
     height: 72px;
@@ -243,10 +410,40 @@ section.main-section*/
 }
 
 .steps {
-    background-color: #141B22;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.step {
+    background-color: #1A1F25;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
 }
 
 /* section.road-map {} */
+
+.road-map {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.road-map-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
 
 .road-map-heading-phase {
     font-family: 'Bakbak One', Arial, sans-serif;
@@ -279,12 +476,102 @@ section.main-section*/
 
 .road-map-container {
     background-color: rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.image-small-square-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.image-big-square img,
+.image-small-square img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.road-map-heading-phase {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.road-map-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.road-map-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #aaa;
+}
+
+.road-map-item img {
+    margin-right: 10px;
+}
+
+.road-map-slider {
+    margin-top: 50px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 20px 0;
+}
+
+.slider-item {
+    color: #aaa;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.slider-item.active {
+    color: #00ff85;
+}
+
+.slider-item:hover {
+    color: #00ff85;
 }
 
 /* section.our-team {} */
 
+.our-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
 .our-team-member {
     background-color: #141B22;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: 0.3s;
 }
 
 .our-team-member h3 {
@@ -296,8 +583,32 @@ section.main-section*/
 
 }
 
+
+.our-team-member:hover {
+    box-shadow: 0px 0px 10px #00ff00;
+}
+
+.our-team {
+    padding: 40px 20px;
+}
+
+/* .our-team-member p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+
+} */
+
 .our-team-post {
     color: #C2C3C5;
+}
+
+.our-team-member img[alt*="profile"] {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
 }
 
 /* section.partners {} */
@@ -344,9 +655,68 @@ section.main-section*/
 }
 
 
+.faqs {
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.faq-item summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .faq-item {
     background-color: rgb(20, 27, 34);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 15px;
+    transition: all 0.3s ease;
 }
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.faq-item summary::after {
+    content: '+';
+    font-size: 24px;
+    color: #21E786;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    content: '-';
+    font-size: 24px;
+    color: #21E786;
+    transform: rotate(180deg);
+}
+
+.faq-item summary:hover {
+    color: #21E786;
+}
+
+.faq-item .faq-content {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #bbb;
+}
+
+details[open] .faq-content {
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+/* .faq-item:hover {
+    box-shadow: 0px 0px 10px #00ff00;
+} */
 
 /* Styles for catalog.html */
 /* main.page-content-catalog {}
@@ -393,15 +763,15 @@ section.main-section*/
 .container {
     display: flex;
     width: 1410px;
-    min-height: 1378px;
-    gap: 0;
+    height: 1378px;
+    top: 450px;
+    left: 255px;
     margin: 100px;
 }
 
 .sidebar {
     width: 280px;
-    min-height: 970px;
-    gap: 0;
+    height: 970px;
     margin: 0px 80px 0px 0px;
 }
 
@@ -415,6 +785,10 @@ section.main-section*/
 
 .item {
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+.breadcrumbs {
+    text-transform: uppercase;
 }
 
 /* color for all links in the page catalog*/
@@ -479,6 +853,9 @@ section.main-section*/
 }
 
 /* color for all links in the page catalog-item*/
+.nav-items {
+    text-transform: uppercase;
+}
 
 .nav-items-link {
     color: rgb(255, 255, 255);
@@ -493,7 +870,7 @@ section.main-section*/
 }
 
 /* section.items {} */
-.items-grid {
+.items-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -590,7 +967,6 @@ section.main-section*/
     min-height: 48px;
     top: 4px;
     left: 1130px;
-    gap: 0;
 }
 
 .search-input {
@@ -623,7 +999,6 @@ section.main-section*/
     height: 20px;
     top: 17px;
     left: 1370px;
-    gap: 0;
 }
 
 /* styles for contact-us.html */
@@ -639,14 +1014,14 @@ section.main-section*/
     max-width: 100%;
 }
 
-.form-grid {
+.form-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.form-grid input,
-.form-grid textarea {
+.form-container input,
+.form-container textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -655,18 +1030,18 @@ section.main-section*/
 
 }
 
-.form-grid input[type="tel"] {
+.form-container input[type="tel"] {
     grid-column: 1 / 3;
     /* Make the phone number input span across two columns */
 }
 
-.form-grid textarea {
+.form-container textarea {
     grid-column: 1 / 3;
     resize: vertical;
     height: 100px;
 }
 
-.form-grid button {
+.form-container button {
     grid-column: 1 / 3;
     justify-self: center;
     padding: 10px 20px;
@@ -697,6 +1072,8 @@ footer.page-footer-main-page {
 .subscription-block-main-footer input {
     width: 690px;
     height: 56px;
+    top: 220px;
+    left: 614px;
     opacity: 0.15;
     font-family: 'Poppins';
     font-size: 16px;
@@ -709,10 +1086,27 @@ footer.page-footer-main-page {
 .button-subscribe {
     width: 154px;
     height: 56px;
+    top: 220px;
+    left: 1150px;
     padding: 12px 24px 12px 24px;
     gap: 8px;
     background: rgba(33, 231, 134, 1);
     color: rgba(4, 11, 17, 1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.page-footer-nav {
+    display: flex;
 }
 
 /* footer for catalog.html and catalog-item.html contact-us.html*/
