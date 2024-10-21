@@ -1,6 +1,10 @@
 # Binabox
 Many pages project from BroAcademy (Frontend Basics) course.
 
+## Page link
+
+https://dalekswar.github.io/Binabox/
+
 ## HTML
 HomePage - done
 
