@@ -118,6 +118,7 @@ header .logo-text {
     font-size: 32px;
     line-height: 42px;
 }
+
 /* color for button discord */
 .btn-discord-header {
     background-color: #141B22;
@@ -137,6 +138,7 @@ header .logo-text {
     height: 48px;
     border-radius: 50%;
 }
+
 /* Navigation styles for index.html catalog.html and catalog-item.html */
 /* nav.pageheader-nav {} */
 
@@ -181,11 +183,16 @@ header .logo-text {
     background-color: #141B22;
     width: 48px;
     height: 48px;
-    gap: 0;
     border-radius: 41px 41px 41px 41px;
+    border: none;
 }
 
 .btn-grey {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 147px;
+    height: 48px;
     background-color: #141B22;
     color: #FFFFFF;
 }
@@ -196,15 +203,26 @@ section.main-section*/
 .main-section {
     display: flex;
 }
+
 .btn-green {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 147px;
+    height: 48px;
     background-color: #21E786;
     color: #141B22;
+    border: none;
 }
 
 .btn-transparent {
     border: 2px solid #21E786;
     color: rgb(255, 255, 255);
     background-color: #141B22;
+}
+
+.btn-connect-wallet {
+    background-color: #21E786;
 }
 
 .stats {
@@ -218,9 +236,13 @@ section.main-section*/
 }
 
 .btn-violet {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 147px;
+    height: 48px;
     background-color: #5865F2;
     color: rgb(255, 255, 255);
-
 }
 
 .btn-black {
@@ -371,6 +393,7 @@ section.main-section*/
 .btn-read-more:hover {
     background-color: #00cc66;
 }
+
 /* section.how-it-works {} */
 
 .how-it-works {
@@ -1065,9 +1088,18 @@ footer.page-footer-main-page {
 }
 
 .join-community-text {
-    color: #C2C3C5
+    color: #C2C3C5;
+    text-align: center;
 }
 
+.join-community-buttons {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
 
 .subscription-block-main-footer input {
     width: 690px;
@@ -1081,6 +1113,10 @@ footer.page-footer-main-page {
     line-height: 26px;
     text-align: left;
     color: rgba(194, 195, 197, 1);
+}
+
+.subscription-block-main-footer {
+    margin-bottom: 30px;
 }
 
 .button-subscribe {
@@ -1127,8 +1163,18 @@ footer.page-footer {
     color: #C2C3C5;
 }
 
+.footer-text-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-text {
     color: #C2C3C5;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 40px;
 }
 
 .join-community {
@@ -1137,6 +1183,7 @@ footer.page-footer {
     background-size: 255px 255px, 321px 321px, 137px 137px, cover, contain;
     background-repeat: no-repeat;
     min-height: 246px;
+    margin-bottom: 60px;
 }
 
 .subscription-block-form input {
@@ -1162,4 +1209,32 @@ footer .logo-text {
     font-size: 22px;
     font-weight: 400;
     line-height: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page-footer-subscription-text,
+.page-footer-company-text {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
 }
